@@ -35,7 +35,7 @@ const AboutReadMore = () => {
   return (
     <div>
       {/* BACK BUTTON */}
-      <button
+      {/* <button
         onClick={() => navigate(-1)}
         style={{
           position: "fixed",
@@ -51,7 +51,7 @@ const AboutReadMore = () => {
         }}
       >
         ← Back
-      </button>
+      </button> */}
 
       {/* HERO SECTION */}
       <section
@@ -184,7 +184,7 @@ const AboutReadMore = () => {
         />
       </section>
 
-      <Footer />
+    
     </div>
   );
 };

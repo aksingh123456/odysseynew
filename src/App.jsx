@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import DestinationMore from "./components/DestinationMore";
 import ServicesMore from "./components/ServicesMore";
 import AboutReadMore from "./components/AboutReadMore";
+import ContactUs from "./components/ContactUs";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
 import { useEffect } from "react";
@@ -33,10 +34,10 @@ const App = () => {
 
         <ul className="nav-links">
           <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => scrollToSection("about")}>About</li>
+          <li onClick={() => navigate("/about")}>About</li>
           <li onClick={() => navigate("/destination-more")}>Destination</li>
           <li onClick={() => navigate("/service-more")}>Our Service</li>
-          <li onClick={() => scrollToSection("contact")}>Contact Us</li>
+          <li onClick={() => navigate("/contact")}>Contact Us</li>
         </ul>
       </nav>
 
@@ -50,15 +51,18 @@ const App = () => {
               <AboutSection />
               <Services />
               <ImageShowcase />
-              <Footer />
+             
             </>
           }
         />
+        <Route path="/contact" element={<ContactUs />} />
+         <Route path="/about" element={<AboutReadMore />} />
         <Route path="/service-more" element={<ServicesMore />} />
         <Route path="/destination-more" element={<DestinationMore />} />
         <Route path="/about-readmore" element={<AboutReadMore />} />
        
       </Routes>
+      <Footer />
     </>
   );
 };
