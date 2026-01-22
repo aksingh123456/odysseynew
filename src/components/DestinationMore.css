@@ -1,0 +1,96 @@
+.destination-more {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.dest-hero {
+  position: relative;
+  height: 70vh;
+}
+
+.dest-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.dest-hero-overlay h1 {
+  font-size: 48px;
+}
+
+.dest-intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dest-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 0 80px 80px;
+}
+
+.dest-left img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dest-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dest-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dest-card {
+  display: flex;
+  gap: 15px;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dest-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.dest-card span {
+  color: orange;
+  cursor: pointer;
+}
+
+.dest-cta {
+  background: #0d1b2a;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.dest-cta button {
+  background: orange;
+  border: none;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}

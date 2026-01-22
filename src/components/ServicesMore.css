@@ -1,0 +1,83 @@
+.services-more {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.services-hero {
+  position: relative;
+  height: 75vh;
+}
+
+.services-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.services-hero-overlay h1 {
+  font-size: 52px;
+}
+
+/* GRID */
+.services-section {
+  padding: 80px 8%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 20px 10px 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 15px 25px;
+}
+
+/* CTA */
+.services-cta {
+  background: url("https://your-cta-image.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.services-cta button {
+  background: #ff8c00;
+  border: none;
+  padding: 12px 32px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
