@@ -143,46 +143,117 @@ const AboutReadMore = () => {
 </section>
 
 
-      {/* OUR STORY */}
-      <section
-        className="story-section"
+     {/* OUR STORY */}
+<section
+  className="story-section"
+  style={{
+    position: "relative",
+    padding: "140px 80px",
+    backgroundImage: `
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("/images/story-bg.jpg")
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    color: "#ffffff",
+    textAlign: "center",
+    fontFamily: "Poppins, sans-serif",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "42px",
+      fontWeight: "600",
+      marginBottom: "18px",
+      letterSpacing: "1px",
+    }}
+  >
+    Our Story
+  </h2>
+
+  <h4
+    style={{
+      fontSize: "18px",
+      fontWeight: "400",
+      marginBottom: "30px",
+      opacity: "0.9",
+    }}
+  >
+    We build our stories from your memories
+  </h4>
+
+  <p
+    style={{
+      maxWidth: "820px",
+      margin: "0 auto",
+      fontSize: "16px",
+      lineHeight: "1.9",
+      opacity: "0.9",
+    }}
+  >
+    At Odyssey, every itinerary is designed with flow — from the moment a
+    traveller steps out, to the moment they return with stories worth keeping.
+    We think beyond destinations. We think about moments, about comfort, about
+    peace of mind.
+    <br />
+    <br />
+    Because when everything moves smoothly, the traveller is free to feel
+    wonder again.
+  </p>
+</section>
+
+
+     {/* OUR NETWORK */}
+<section
+  className="network-section"
+  style={{
+    padding: "100px 80px",
+  }}
+>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "60px",
+      alignItems: "center",
+    }}
+  >
+    {/* LEFT IMAGE */}
+    <div>
+      <img
+        src="/images/network-map.jpg"
+        alt="Network Map"
         style={{
-          padding: "120px 80px",
-          background: `linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-          url("/images/story-bg.jpg") center/cover`,
-          color: "#fff",
-          textAlign: "center",
+          width: "100%",
+          borderRadius: "14px",
+          boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
         }}
-      >
-        <h2>Our Story</h2>
-        <p style={{ maxWidth: "700px", margin: "20px auto" }}>
-          We build our stories from your memories. Odyssey Heritage helps you
-          relive every travel experience through curated journeys and meaningful
-          moments.
-        </p>
-      </section>
+      />
+    </div>
 
-      {/* OUR NETWORK */}
-      <section
-        className="network-section"
-        style={{ padding: "100px 80px", textAlign: "center" }}
-      >
-        <h2>Our Network</h2>
-        <p>
-          We are growing trusted networks across global destinations with strong
-          local partnerships.
-        </p>
+    {/* RIGHT CONTENT */}
+    <div>
+      <h2 style={{ marginBottom: "20px" }}>Our Network</h2>
 
-        <img
-          src="/images/network-map.jpg"
-          alt="Network Map"
-          style={{
-            width: "80%",
-            marginTop: "40px",
-            borderRadius: "14px",
-          }}
-        />
-      </section>
+      <p style={{ marginBottom: "16px", lineHeight: "1.7", color: "#444" }}>
+        Yes! we are pinning location for you with our network.
+      </p>
+
+      <p style={{ marginBottom: "16px", lineHeight: "1.7", color: "#444" }}>
+        Driven by trust and clarity, we simplify travel planning by connecting
+        partners with reliable destination expertise — so the focus stays on
+        delivering great journeys, not managing complexity.
+      </p>
+
+      <p style={{ lineHeight: "1.7", color: "#444" }}>
+        Our operations span key destinations including Dubai, Singapore, Bali,
+        Thailand, Indonesia, and Malaysia, with a continuously expanding network
+        designed to support seamless travel experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     
     </div>

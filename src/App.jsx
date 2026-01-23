@@ -36,7 +36,25 @@ const App = () => {
     <>
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="logo" onClick={() => navigate("/")}>Odyssey</div>
+        <div
+  className="logo"
+  onClick={() => navigate("/")}
+  style={{
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  }}
+>
+  <img
+    src="/images/odyssey-logo.png"   // <-- apna logo ka path yaha
+    alt="Odyssey Logo"
+    style={{
+      height: "40px",   // size adjust kar sakta hai
+      width: "auto",
+    }}
+  />
+</div>
 
         <ul className="nav-links">
           <li onClick={() => navigate("/")}>Home</li>
