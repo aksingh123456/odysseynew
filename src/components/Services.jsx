@@ -1,23 +1,24 @@
 import ReadMore from "./ReadMore";
+import { Link } from "react-router-dom";
 const services = [
   {
-    title: "Free Independent Services",
-    desc: "Individual or small-group travelers with customized trips.",
+    // title: "Free Independent Services",
+    // desc: "Individual or small-group travelers with customized trips.",
     img: "/images/service1.jpg",
   },
   {
-    title: "MICE Service",
-    desc: "Corporate and business travel & events.",
+    // title: "MICE Service",
+    // desc: "Corporate and business travel & events.",
     img: "/images/service2.jpg",
   },
   {
-    title: "Group Inclusive Tour",
-    desc: "Pre-planned tours for large groups.",
+    // title: "Group Inclusive Tour",
+    // desc: "Pre-planned tours for large groups.",
     img: "/images/service3.jpg",
   },
   {
-    title: "VISA Service",
-    desc: "Complete visa assistance with documentation.",
+    // title: "VISA Service",
+    // desc: "Complete visa assistance with documentation.",
     img: "/images/service4.jpg",
   },
 ];
@@ -39,7 +40,9 @@ const Services = () => {
         ))}
        
       </div>
-       <ReadMore link="/services-readmore.html" />
+ <Link to="/service-more">
+    Read More
+  </Link>
       
     </section>
   );

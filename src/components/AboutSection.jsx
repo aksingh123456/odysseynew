@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import ReadMore from "./ReadMore";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutReadMore from "./AboutReadMore";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
@@ -81,17 +82,14 @@ const AboutSection = () => {
 </div>
 
 
-          <button className="about-btn">Read More</button>
+          
         </div>
 
       </div>
-      
-       <button
-      className="about-btn"
-      onClick={() => navigate("/about-readmore")}
-    >
-      Read More
-    </button>
+      <Link  to="/about-readmore" >
+  Read More
+</Link>
+
     </section>
   );
 };

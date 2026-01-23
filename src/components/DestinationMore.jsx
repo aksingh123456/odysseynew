@@ -8,7 +8,7 @@ const DestinationMore = () => {
       {/* HERO SECTION */}
       <section className="dest-hero">
         <img
-          src="https://your-image-link-here.jpg"
+          src="/images/your-image-link-here.jpg"
           alt="Destination Hero"
           className="dest-hero-img"
         />
@@ -33,7 +33,7 @@ const DestinationMore = () => {
         {/* LEFT */}
         <div className="dest-left">
           <img
-            src="https://your-dubai-image.jpg"
+            src="/images/your-dubai-image.jpg"
             alt="Dubai"
           />
           <h3>Dubai</h3>
@@ -54,7 +54,7 @@ const DestinationMore = () => {
         <div className="dest-right">
 
           <div className="dest-card">
-            <img src="https://your-thailand.jpg" alt="Thailand" />
+            <img src="/images/your-thailand.jpg" alt="Thailand" />
             <div>
               <h4>Thailand</h4>
               <p>
@@ -66,7 +66,12 @@ const DestinationMore = () => {
           </div>
 
           <div className="dest-card">
-            <img src="https://your-bali.jpg" alt="Bali" />
+            <img src="/images/your-bali.jpg" alt="Bali" />
+            {/* <img
+          src="/images/hero-img1.jpg"
+          alt="Our Services"
+          className="services-hero-img"
+        /> */}
             <div>
               <h4>Bali</h4>
               <p>
@@ -78,7 +83,7 @@ const DestinationMore = () => {
           </div>
 
           <div className="dest-card">
-            <img src="https://your-vietnam.jpg" alt="Vietnam" />
+            <img src="/images/your-vietnam.jpg" alt="Vietnam" />
             <div>
               <h4>Vietnam</h4>
               <p>

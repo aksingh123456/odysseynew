@@ -36,40 +36,62 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-auto-rows: auto;
   gap: 30px;
 }
 
 .service-card {
-  background: #fff;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  border-radius: 8px;
+  position: relative; /* overlay ke liye required */
   overflow: hidden;
-  text-align: center;
+  border-radius: 12px;
 }
 
 .service-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.service-card h3 {
-  margin: 20px 10px 10px;
+/* Overlay text on image */
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* semi-transparent overlay */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 1; /* always visible */
+  transition: opacity 0.3s ease;
 }
 
-.service-card p {
+.service-overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.service-overlay p {
   font-size: 14px;
-  color: #555;
-  padding: 0 15px 25px;
+}
+
+/* Hover zoom effect */
+.service-card:hover img {
+  transform: scale(1.05);
 }
 
 /* CTA */
 .services-cta {
-  background: url("https://your-cta-image.jpg") center/cover no-repeat;
+  background: url("/images/cta-bg.jpg") center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   color: white;
+  border-radius: 12px;
 }
 
 .services-cta button {
@@ -80,4 +102,20 @@
   color: white;
   cursor: pointer;
   margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-hero-overlay h1 {
+    font-size: 36px;
+  }
 }

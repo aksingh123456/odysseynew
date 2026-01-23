@@ -1,0 +1,80 @@
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.auth-modal {
+  background: #000;
+  width: 420px;
+  padding: 30px;
+  color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.auth-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-modal input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-btn {
+  width: 100%;
+  background: orange;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot {
+  font-size: 13px;
+  color: orange;
+  cursor: pointer;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.switch span {
+  color: orange;
+  cursor: pointer;
+}
+
+.terms {
+  font-size: 12px;
+}
+
+.terms span {
+  color: orange;
+}

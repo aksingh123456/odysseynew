@@ -9,11 +9,17 @@ import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
+import { useState } from "react";
+import LoginModal from "./components/LoginModal";
+import SignupModal from "./components/SignupModal";
 import { useEffect } from "react";
 import "./App.css";
 
 const App = () => {
   const navigate = useNavigate();
+   const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
+
 
   useEffect(() => {
     initSmoothScroll();
@@ -38,6 +44,8 @@ const App = () => {
           <li onClick={() => navigate("/destination-more")}>Destination</li>
           <li onClick={() => navigate("/service-more")}>Our Service</li>
           <li onClick={() => navigate("/contact")}>Contact Us</li>
+          <li onClick={() => navigate("/login")}>Login/SignUp</li>
+          <li></li>
         </ul>
       </nav>
 
@@ -55,6 +63,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="/login" element={<LoginModal/>} />
         <Route path="/contact" element={<ContactUs />} />
          <Route path="/about" element={<AboutReadMore />} />
         <Route path="/service-more" element={<ServicesMore />} />
@@ -62,6 +71,7 @@ const App = () => {
         <Route path="/about-readmore" element={<AboutReadMore />} />
        
       </Routes>
+      
       <Footer />
     </>
   );
