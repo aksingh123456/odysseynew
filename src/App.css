@@ -10,6 +10,11 @@ html {
 .services {
   padding: 80px 10%;
 }
+.serviceshead{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px
+}
 .hero-section {
   position: relative;
   height: 100vh;
@@ -263,7 +268,7 @@ section {
   border-radius: 8px;
   cursor: pointer; */
   
-} */
+*/
 
 
 .service-grid {
@@ -276,6 +281,7 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+   height: 380px; 
 }
 
 .service-card img {
@@ -295,7 +301,7 @@ section {
 .image-showcase {
   padding: 100px 10%;
   text-align: center;
-  background: #f5f9ff;
+  font-size: 30px;
 }
 
 .image-row {

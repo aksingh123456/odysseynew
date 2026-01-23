@@ -1,17 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Counter from "./Counter";
-import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { gsap } from "gsap";
-import ReadMore from "./ReadMore";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import AboutReadMore from "./AboutReadMore";
-import { Link } from "react-router-dom";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
-    const sectionRef = useRef(null);
-     const navigate = useNavigate();
+  const sectionRef = useRef(null);
+  const navigate = useNavigate();
+
   useEffect(() => {
     gsap.fromTo(
       sectionRef.current,
@@ -30,16 +28,45 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="about-section" id="about">
-      <div className="about-container">
+    <section className="about-section" id="about" ref={sectionRef}>
+       <div className="about-container">
 
-        {/* LEFT SIDE IMAGES */}
-        <div className="about-left">
-          <img
-            src="/images/about-main.jpg"
-            alt="Main Lake"
-            className="about-main-img"
-          />
+    {/* LEFT SIDE */}
+    <div className="about-left" style={{ position: "relative" }}>
+
+      {/* ABOUT TAG */}
+      <span className="about-tag"
+        style={{
+        
+          top: "20px",
+          left: "20px",
+          zIndex: 2,
+        }}
+      >
+        About Us
+      </span>
+      <h2
+        style={{
+         
+          bottom: "40px",
+          left: "50%",
+          paddingLeft:"350px",
+          color: "black",
+          fontSize: "42px",
+          fontWeight: "600",
+          textAlign: "center",
+          whiteSpace: "nowrap",
+          zIndex: 2,
+        }}
+      >
+        Your Memory, Our Story
+      </h2>
+       <img
+        src="/images/about-main.jpg"
+        alt="Main Lake"
+        className="about-main-img"
+      />
+           
 
           <div className="about-small-card">
             <img
@@ -54,8 +81,7 @@ const AboutSection = () => {
 
         {/* RIGHT SIDE CONTENT */}
         <div className="about-right">
-          <span className="about-tag">About Us</span>
-          <h2>Your Memory, Our Story</h2>
+          
 
           <p>
             Odyssey Heritage is a destination management platform that blends
@@ -65,31 +91,28 @@ const AboutSection = () => {
           </p>
 
           <div className="about-stats">
-  <div>
-    <Counter start={50} end={111} />
-    <span>Travel Experiences</span>
-  </div>
+            <div>
+              <Counter start={50} end={111} />
+              <span>Travel Experiences</span>
+            </div>
 
-  <div>
-    <Counter start={0} end={12} />
-    <span>Countries</span>
-  </div>
+            <div>
+              <Counter start={0} end={12} />
+              <span>Countries</span>
+            </div>
 
-  <div>
-    <Counter start={80} end={100} />
-    <span>Partner-first Approach</span>
-  </div>
-</div>
+            <div>
+              <Counter start={80} end={100} />
+              <span>Partner-first Approach</span>
+            </div>
+          </div>
 
-
-          
+          <Link to="/about-readmore" className="about-readmore">
+            Read More
+          </Link>
         </div>
 
       </div>
-      <Link  to="/about-readmore" >
-  Read More
-</Link>
-
     </section>
   );
 };
