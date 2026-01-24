@@ -62,10 +62,12 @@ const AboutSection = () => {
         Your Memory, Our Story
       </h2>
        <img
-        src="/images/about-main.jpg"
-        alt="Main Lake"
-        className="about-main-img"
-      />
+  src="/images/about-main.jpg"
+  alt="Main Lake"
+  className="about-main-img"
+  style={{ marginTop: "32px" }}   // 👈 YE ADD KARO
+/>
+
            
 
           <div className="about-small-card">
@@ -90,7 +92,7 @@ const AboutSection = () => {
             effortlessly as a travel partner.
           </p>
 
-          <div className="about-stats" style={{fontWeight:"bold"}}>
+          <div className="about-stats" style={{fontWeight:"bold" ,marginBottom:"40px"}}>
             <div>
               <Counter start={50} end={111} />
               <span>Travel Experiences</span>
@@ -106,10 +108,34 @@ const AboutSection = () => {
               <span>Partner-first Approach</span>
             </div>
           </div>
+          
+<p
+  style={{
+    marginTop: "24px",
+    marginRight: "85px",
+    fontSize: "15px",
+    fontWeight: "600",   // 👈 thoda bold
+    color: "#333",       // 👈 darker like image
+  }}
+>
+  Ease, trust, and journeys that unfold gently
+</p>
 
-          <Link to="/about-readmore" className="about-readmore">
-            Read More
-          </Link>
+          <Link
+  to="/about"
+  className="about-readmore"
+  style={{
+    position: "absolute",
+    right: "-80px",
+    bottom: "-200px",
+    fontWeight: "600",
+    textDecoration: "none",
+    color: "#000",
+  }}
+>
+  Read More
+</Link>
+
         </div>
 
       </div>

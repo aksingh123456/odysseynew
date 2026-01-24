@@ -7,14 +7,18 @@ import DestinationMore from "./components/DestinationMore";
 import ServicesMore from "./components/ServicesMore";
 import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate ,useLocation } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
 import { useState, useEffect, useRef } from "react";
 import LoginModal from "./components/LoginModal";
+
+
 import "./App.css";
 
 const App = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
   const navbarRef = useRef(null);
 
   useEffect(() => {
@@ -54,14 +58,50 @@ const App = () => {
           />
         </div>
 
-        <ul className="nav-links">
-          <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => navigate("/about")}>About</li>
-          <li onClick={() => navigate("/destination-more")}>Destination</li>
-          <li onClick={() => navigate("/service-more")}>Our Service</li>
-          <li onClick={() => navigate("/contact")}>Contact Us</li>
-          <li onClick={() => navigate("/login")}>Login/SignUp</li>
-        </ul>
+       <ul className="nav-links">
+  <li
+    className={location.pathname === "/" ? "active" : ""}
+    onClick={() => navigate("/")}
+  >
+    Home
+  </li>
+
+  <li
+    className={location.pathname === "/about" ? "active" : ""}
+    onClick={() => navigate("/about")}
+  >
+    About
+  </li>
+
+  <li
+    className={location.pathname === "/destination-more" ? "active" : ""}
+    onClick={() => navigate("/destination-more")}
+  >
+    Destination
+  </li>
+
+  <li
+    className={location.pathname === "/service-more" ? "active" : ""}
+    onClick={() => navigate("/service-more")}
+  >
+    Our Service
+  </li>
+
+  <li
+    className={location.pathname === "/contact" ? "active" : ""}
+    onClick={() => navigate("/contact")}
+  >
+    Contact Us
+  </li>
+
+  <li
+    className={location.pathname === "/login" ? "active" : ""}
+    onClick={() => navigate("/login")}
+  >
+    Login/SignUp
+  </li>
+</ul>
+
       </nav>
 
       {/* ROUTES */}
