@@ -33,7 +33,7 @@ const Services = () => {
           <Link
             to="/service-more"
             key={i}
-            style={{ textDecoration: "none", color: "inherit" }}
+            style={{ textDecoration: "none", color: "inherit", fontWeight: "bold" }}
           >
           <div className="service-card" key={i}>
             <img src={s.img} alt={s.title} />

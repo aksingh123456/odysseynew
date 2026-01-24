@@ -9,52 +9,50 @@ import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import LoginModal from "./components/LoginModal";
-import SignupModal from "./components/SignupModal";
-import { useEffect } from "react";
 import "./App.css";
 
 const App = () => {
   const navigate = useNavigate();
-   const [showLogin, setShowLogin] = useState(false);
-  const [showSignup, setShowSignup] = useState(false);
-
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     initSmoothScroll();
-  }, []);
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+    const sections = document.querySelectorAll(".page-section");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          navbarRef.current.classList.add("show-navbar");
+        } else {
+          navbarRef.current.classList.remove("show-navbar");
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach((sec) => observer.observe(sec));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       {/* NAVBAR */}
-      <nav className="navbar">
+      <nav className="navbar" ref={navbarRef}>
         <div
-  className="logo"
-  onClick={() => navigate("/")}
-  style={{
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
-    gap: "8px",
-  }}
->
-  <img
-    src="/images/odyssey-logo.png"   // <-- apna logo ka path yaha
-    alt="Odyssey Logo"
-    style={{
-      height: "40px",   // size adjust kar sakta hai
-      width: "auto",
-    }}
-  />
-</div>
+          className="logo"
+          onClick={() => navigate("/")}
+          style={{ cursor: "pointer" }}
+        >
+          <img
+            src="/images/odyssey-logo.png"
+            alt="Odyssey Logo"
+            style={{ height: "40px" }}
+          />
+        </div>
 
         <ul className="nav-links">
           <li onClick={() => navigate("/")}>Home</li>
@@ -63,7 +61,6 @@ const App = () => {
           <li onClick={() => navigate("/service-more")}>Our Service</li>
           <li onClick={() => navigate("/contact")}>Contact Us</li>
           <li onClick={() => navigate("/login")}>Login/SignUp</li>
-          <li></li>
         </ul>
       </nav>
 
@@ -73,24 +70,21 @@ const App = () => {
           path="/"
           element={
             <>
-              <Hero />
-              <AboutSection />
-              <Services />
-              <ImageShowcase />
-             
+              <Hero className="page-section" />
+              <AboutSection className="page-section" />
+              <Services className="page-section" />
+              <ImageShowcase className="page-section" />
             </>
           }
         />
-        <Route path="/login" element={<LoginModal/>} />
+        <Route path="/login" element={<LoginModal />} />
         <Route path="/contact" element={<ContactUs />} />
-         <Route path="/about" element={<AboutReadMore />} />
+        <Route path="/about" element={<AboutReadMore />} />
         <Route path="/service-more" element={<ServicesMore />} />
         <Route path="/destination-more" element={<DestinationMore />} />
-        <Route path="/about-readmore" element={<AboutReadMore />} />
-       
       </Routes>
-      
-      <Footer />
+
+      <Footer className="page-section" />
     </>
   );
 };

@@ -83,14 +83,14 @@ const AboutSection = () => {
         <div className="about-right">
           
 
-          <p>
+          <p style={{fontWeight:"bolder"}}>
             Odyssey Heritage is a destination management platform that blends
             local expertise with seamless travel operations. Discover curated
             itineraries, connect with trusted ground networks, and collaborate
             effortlessly as a travel partner.
           </p>
 
-          <div className="about-stats">
+          <div className="about-stats" style={{fontWeight:"bold"}}>
             <div>
               <Counter start={50} end={111} />
               <span>Travel Experiences</span>

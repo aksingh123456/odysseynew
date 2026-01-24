@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -20,18 +26,7 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 60px;
-  background:white;
-  
-}
+
 
 .nav-links {
   display: flex;
@@ -41,8 +36,8 @@ html {
 
 .nav-links li {
   cursor: pointer;
-  color: white;
-  font-weight: 500;
+  color:black;
+  font-weight: 900;
   transition: color 0.3s;
 }
 
@@ -51,15 +46,26 @@ html {
 }
 /* Navbar styling */
 .navbar {
-  position: fixed;
+  position: fixed;   /* fixed nahi */
   top: 0;
   width: 100%;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1px 9px;
-  
+  padding: 2px 10px;
+  background: white;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.navbar.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* show state */
+.navbar.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 .read-more-wrapper {
   text-align: right; /* center ho sakta hai ya left/right adjust */
@@ -258,17 +264,7 @@ section {
   margin-bottom: 4px;
 }
 
-/* .about-btn {
-  /* margin-top: 30px;
-  padding: 12px 26px;
-  
-  border: none;
-  color: black;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer; */
-  
-*/
+
 
 
 .service-grid {
@@ -303,6 +299,19 @@ section {
   text-align: center;
   font-size: 30px;
 }
+.dest-intro {
+  padding: 40px 0;   /* jitna chahiye utna */
+  margin-bottom: 0;  /* niche ka extra space hatao */
+}
+
+.dest-intro h2 {
+  margin-bottom: 12px;
+}
+
+.dest-intro p {
+  margin-bottom: 0;
+}
+
 
 .image-row {
   display: flex;
@@ -321,6 +330,6 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 40px;
 }

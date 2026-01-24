@@ -4,8 +4,15 @@ const Footer = () => {
       <div className="footer-grid">
 
         <div>
-          <h3>Odyssey Heritage</h3>
-          <p>Ease, trust, and journeys that unfold gently.</p>
+          <img
+    src="/images/odyssey-logo.png"   // <-- apna logo ka path yaha
+    alt="Odyssey Logo"
+    style={{
+      height: "150px",   // size adjust kar sakta hai
+      width: "auto",
+      background: "#gray",
+    }}
+  />
         </div>
 
         <div>
@@ -13,8 +20,9 @@ const Footer = () => {
           <ul>
             <li>About Us</li>
             <li>Blogs</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>Our Experiences</li>
+            <li>Our Services</li>
+            <li>Payment Links</li>
           </ul>
         </div>
 
@@ -23,8 +31,19 @@ const Footer = () => {
           <ul>
             <li>Thailand</li>
             <li>Bali</li>
+            <li>Vietnam</li>
             <li>Dubai</li>
             <li>Georgia</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Services</h4>
+          <ul>
+            <li>FIT</li>
+            <li>GIT</li>
+            <li>Customized Packages</li>
+            <li>MCE</li>
+            <li>VISA</li>
           </ul>
         </div>
 

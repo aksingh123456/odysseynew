@@ -68,7 +68,7 @@ const AboutReadMore = () => {
         }}
       >
         <h1>About Us</h1>
-        <p style={{ maxWidth: "520px" }}>
+        <p style={{ maxWidth: "520px", fontWeight:"bolder",fontSize: "18px",}}>
           A destination management platform built to support travel partners with
           seamless operations, trusted expertise, and deep destination knowledge.
         </p>
@@ -100,45 +100,134 @@ const AboutReadMore = () => {
       flexWrap: "wrap",
     }}
   >
+   <div
+  style={{
+    display: "flex",
+    gap: "30px",
+    justifyContent: "center",
+    flexWrap: "wrap",
+  }}
+>
+  {/* CARD 1 */}
+  <div
+    style={{
+      width: "250px",
+      borderRadius: "16px",
+      overflow: "hidden",
+      background: "#fff",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+    }}
+  >
     <img
       src="/images/gallery-1.jpg"
       alt="Creating 1"
       style={{
-        width: "250px",
-        borderRadius: "14px",
+        width: "100%",
+        height: "180px",
         objectFit: "cover",
       }}
     />
+    <div style={{ padding: "16px" }}>
+      <h4 style={{ margin: "0 0 8px" }}> Creating Trust</h4>
+      <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>
+      
+Consistency, honesty, believe building 3
+pillars with peace
+      </p>
+    </div>
+  </div>
 
+  {/* CARD 2 */}
+  <div
+    style={{
+      width: "250px",
+      borderRadius: "16px",
+      overflow: "hidden",
+      background: "#fff",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+    }}
+  >
     <img
       src="/images/gallery-2.jpg"
       alt="Creating 2"
       style={{
-        width: "250px",
-        borderRadius: "14px",
+        width: "100%",
+        height: "180px",
         objectFit: "cover",
       }}
     />
+    <div style={{ padding: "16px" }}>
+      <h4 style={{ margin: "0 0 8px" }}> People First</h4>
+      <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>
+Your itinerary, our plan
+With believe of people first every
+interaction with agents or partners is for
+understanding your needs and building
+trust
+      </p>
+    </div>
+  </div>
 
+  {/* CARD 3 */}
+  <div
+    style={{
+      width: "250px",
+      borderRadius: "16px",
+      overflow: "hidden",
+      background: "#fff",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+    }}
+  >
     <img
       src="/images/gallery-3.jpg"
       alt="Creating 3"
       style={{
-        width: "250px",
-        borderRadius: "14px",
+        width: "100%",
+        height: "180px",
         objectFit: "cover",
       }}
     />
+    <div style={{ padding: "16px" }}>
+      <h4 style={{ margin: "0 0 8px" }}> Travel Freely</h4>
+      <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>
+       
+Because you are trusting us we treat
+your journey as our own experience
+offering safe travel
+      </p>
+    </div>
+  </div>
 
+  {/* CARD 4 */}
+  <div
+    style={{
+      width: "250px",
+      borderRadius: "16px",
+      overflow: "hidden",
+      background: "#fff",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+    }}
+  >
     <img
       src="/images/gallery-4.jpg"
       alt="Creating 4"
       style={{
-        width: "250px",
-        borderRadius: "14px",
+        width: "100%",
+        height: "180px",
         objectFit: "cover",
       }}
     />
+    <div style={{ padding: "16px" }}>
+      <h4 style={{ margin: "0 0 8px" }}>Crafting with d</h4>
+      <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>
+    
+Crafting in a way that re
+memory feels like
+      </p>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -252,6 +341,33 @@ const AboutReadMore = () => {
       </p>
     </div>
   </div>
+</section>
+<section  style={{
+    position: "relative",
+    padding: "140px 80px",
+    backgroundImage: `
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("/images/image 47.jpg")
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    color: "#ffffff",
+    textAlign: "center",
+    fontFamily: "Poppins, sans-serif",
+   }}>  
+  <h4
+    style={{
+      fontSize: "18px",
+      fontWeight: "400",
+      marginBottom: "30px",
+      opacity: "0.9",
+      
+    }}
+  >
+    We are excited to see you to
+    <br />
+be a part of our memory
+  </h4>
 </section>
 
 
