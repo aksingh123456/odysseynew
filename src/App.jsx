@@ -10,6 +10,8 @@ import ContactUs from "./components/ContactUs";
 import { Routes, Route, useNavigate ,useLocation } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
 import { useState, useEffect, useRef } from "react";
+
+
 import LoginModal from "./components/LoginModal";
 
 
@@ -18,6 +20,7 @@ import "./App.css";
 const App = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [hovered, setHovered] = useState(null);
 
   const navbarRef = useRef(null);
 
@@ -59,47 +62,163 @@ const App = () => {
         </div>
 
        <ul className="nav-links">
-  <li
-    className={location.pathname === "/" ? "active" : ""}
-    onClick={() => navigate("/")}
-  >
-    Home
-  </li>
+       <li
+  onClick={() => navigate("/")}
+  onMouseEnter={() => setHovered("/")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
+
+    color:
+    hovered === "/" || location.pathname === "/"
+      ? "orange"
+       : "#000",
+
+    borderBottom:
+       location.pathname === "/"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  Home
+</li>
+
 
   <li
-    className={location.pathname === "/about" ? "active" : ""}
-    onClick={() => navigate("/about")}
-  >
-    About
-  </li>
+  onClick={() => navigate("/about")}
+  onMouseEnter={() => setHovered("/about")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
 
-  <li
-    className={location.pathname === "/destination-more" ? "active" : ""}
-    onClick={() => navigate("/destination-more")}
-  >
-    Destination
-  </li>
+    color:
+    hovered === "/about" || location.pathname === "/about"
 
-  <li
-    className={location.pathname === "/service-more" ? "active" : ""}
-    onClick={() => navigate("/service-more")}
-  >
-    Our Service
-  </li>
+      ? "orange"
+      : "#000",
 
-  <li
-    className={location.pathname === "/contact" ? "active" : ""}
-    onClick={() => navigate("/contact")}
-  >
-    Contact Us
-  </li>
+    borderBottom:
+      location.pathname === "/about"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  About
+</li>
 
-  <li
-    className={location.pathname === "/login" ? "active" : ""}
-    onClick={() => navigate("/login")}
-  >
-    Login/SignUp
-  </li>
+
+<li
+  onClick={() => navigate("/destination-more")}
+  onMouseEnter={() => setHovered("/destination-more")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
+
+      /*  TEXT COLOR */
+      color:
+      hovered === "/destination-more" || location.pathname === "/destination-more"
+
+        ? "orange"
+        : "#000",
+
+
+    borderBottom:
+    
+      location.pathname === "/destination-more"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  Destination
+</li>
+
+
+<li
+  onClick={() => navigate("/service-more")}
+  onMouseEnter={() => setHovered("/service-more")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
+
+      /*  TEXT COLOR */
+      color:
+      hovered === "/service-more" || location.pathname === "/service-more"
+
+        ? "orange"
+        : "#000",
+
+    borderBottom:
+     
+      location.pathname === "/service-more"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  Our Service
+</li>
+
+
+<li
+  onClick={() => navigate("/contact")}
+  onMouseEnter={() => setHovered("/contact")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
+
+      /*  TEXT COLOR */
+      color:
+      hovered === "/contact" || location.pathname === "/contact"
+
+        ? "orange"
+        : "#000",
+
+    borderBottom:
+     
+      location.pathname === "/contact"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  Contact Us
+</li>
+
+
+<li
+  onClick={() => navigate("/login")}
+  onMouseEnter={() => setHovered("/login")}
+  onMouseLeave={() => setHovered(null)}
+  style={{
+    cursor: "pointer",
+    paddingBottom: "6px",
+
+      /*  TEXT COLOR */
+      color:
+      hovered === "/login" || location.pathname === "/login"
+
+        ? "orange"
+        : "#000",
+
+
+    borderBottom:
+       location.pathname === "/login"
+        ? "2px solid orange"
+        : "2px solid transparent",
+    transition: "border-bottom 0.25s ease",
+  }}
+>
+  Login / SignUp
+</li>
+
 </ul>
 
       </nav>
