@@ -70,10 +70,10 @@ const App = () => {
           path="/"
           element={
             <>
-              <Hero className="page-section" />
-              <AboutSection className="page-section" />
-              <Services className="page-section" />
-              <ImageShowcase className="page-section" />
+              <Hero />
+              <AboutSection />
+              <Services />
+              <ImageShowcase />
             </>
           }
         />

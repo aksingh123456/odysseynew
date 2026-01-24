@@ -31,28 +31,34 @@
 
 
 .dest-intro {
-  padding: 20px; /* section ke andar ka spacing */
-  text-align: center; /* heading aur paragraph center me */
+  padding: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .dest-intro h2 {
-  font-size: 36px;  /* heading ko bada kar diya */
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 15px; /* heading aur paragraph ke beech gap */
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .dest-intro p {
-  font-size: 16px;  /* paragraph thoda readable size */
-  line-height: 1.5; /* paragraph me line spacing */
-  color: #555;      /* text thoda subtle */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 0;
 }
 
 .dest-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
-  padding: 0 80px 80px;
+  padding: 0 80px;
+  margin-top: 0;
 }
+
 
 .dest-left img {
   width: 100%;
