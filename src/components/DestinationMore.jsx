@@ -19,13 +19,13 @@ const DestinationMore = () => {
       </section>
 
       {/* INTRO */}
-      <section className="dest-intro">
+       <div className="dest-intro">
         <h2>Choose Your Destination</h2>
-        <p>
+        <p style={{fontWeight:"bold",letterSpacing:"-0.9px"}}>
           Each destination is supported by trusted local networks, ensuring
           smooth planning, coordination, and execution for travel partners.
         </p>
-      </section>
+      </div>
 
       {/* MAIN CONTENT */}
       <section className="dest-content">
@@ -36,14 +36,14 @@ const DestinationMore = () => {
             src="/images/your-dubai-image.jpg"
             alt="Dubai"
           />
-          <h3>Dubai</h3>
-          <p>
+          <h3 style={{marginBottom: "10px"}}>Dubai</h3>
+          <p style={{fontSize: "26px", color: "#555"}}>
             A modern global city combining luxury, innovation, and cultural
             experiences. Dubai is well suited for premium leisure travel,
-            corporate programs, and large-scale events.
+            corporate programs, and large-scale eventssupported by world-class infrastructure and services.
           </p>
 
-          <div className="dest-icons">
+          <div className="dest-icons" style={{fontSize:"25px"}}>
             <div>🏙 Capital City</div>
             <div>🍽 Cuisine</div>
             <div>📜 History</div>
@@ -98,13 +98,24 @@ const DestinationMore = () => {
       </section>
 
       {/* CTA */}
-      <section className="dest-cta">
-        <p>
-          As a full-service destination management company, Odyssey Heritage
-          ensures seamless coordination from planning to execution.
-        </p>
-        <button>Contact Us</button>
-      </section>
+    <section className="dest-cta">
+  <div className="dest-cta-overlay">
+    <p>
+ As a full-service destination management company, Odyssey Heritage works closely with
+travel agents and tour operators to deliver seamless, end-to-end travel solutions. We
+manage every detail on the ground, ensuring smooth coordination from planning to
+execution. We look forward to collaborating with you and sharing our destination expertise.
+  <br />
+  <span className="highlight-text">
+    Explore the world with Odyssey Heritage.
+  </span>
+
+
+    </p>
+    <button>Contact Us</button>
+  </div>
+</section>
+
 
     </div>
   );

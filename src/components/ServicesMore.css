@@ -9,15 +9,14 @@
 }
 
 .services-hero-img {
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 109%;
   object-fit: cover;
 }
 
 .services-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,37 +28,41 @@
   font-size: 52px;
 }
 
-/* GRID */
+/* SERVICES GRID */
 .services-section {
   padding: 80px 8%;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
+/* 🔥 ACTUAL CARD FIX */
 .service-card {
-  position: relative; /* overlay ke liye required */
+  position: relative;
+  background: #fff;                 /* white base */
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.6); /* WHITE SHADOW */
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0;                 /* PURE RECTANGLE */
 }
 
+/* IMAGE FULL RECTANGLE */
 .service-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
+  border-radius: 0; 
 }
 
-/* Overlay text on image */
+/* OVERLAY */
 .service-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4); /* semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.45);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -67,44 +70,40 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  opacity: 1; /* always visible */
-  transition: opacity 0.3s ease;
 }
 
 .service-overlay h3 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
 }
 
 .service-overlay p {
   font-size: 14px;
+  line-height: 1.4;
 }
 
-/* Hover zoom effect */
+/* HOVER EFFECT */
 .service-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+.service-card:hover {
+  box-shadow: 0 18px 40px rgba(255, 255, 255, 0.85);
 }
 
 /* CTA */
 .services-cta {
   background: url("/images/cta-bg.jpg") center/cover no-repeat;
-  padding: 100px 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
-  border-radius: 12px;
 }
 
-.services-cta button {
-  background: #ff8c00;
-  border: none;
-  padding: 12px 32px;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -115,6 +114,11 @@
   .services-grid {
     grid-template-columns: 1fr;
   }
+
+  .service-card img {
+    height: 220px;
+  }
+
   .services-hero-overlay h1 {
     font-size: 36px;
   }

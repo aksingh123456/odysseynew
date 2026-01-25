@@ -3,21 +3,23 @@
   color: #222;
 }
 
+/* ================= HERO ================= */
+
 .dest-hero {
   position: relative;
   height: 70vh;
 }
 
 .dest-hero-img {
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 109%;
   object-fit: cover;
 }
 
 .dest-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,47 +31,61 @@
   font-size: 48px;
 }
 
+/* ================= INTRO (NO EXTRA SPACE) ================= */
 
 .dest-intro {
-  padding: 20px;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding: 30px 20px 10px;   /* 👈 tight spacing */
+  margin: 0;
   text-align: center;
 }
 
 .dest-intro h2 {
   font-size: 36px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-weight: 700;
+  margin: 0 0 8px;
 }
 
 .dest-intro p {
   font-size: 16px;
   line-height: 1.5;
   color: #555;
-  margin-bottom: 0;
+  margin: 0;
 }
+
+/* ================= CONTENT (MAIN FIX HERE) ================= */
 
 .dest-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
-  padding: 0 80px;
-  margin-top: 0;
+
+  padding: 0 80px;     /* 👈 TOP SPACE COMPLETELY REMOVED */
+  margin: 0;           /* 👈 extra gap killer */
 }
 
+/* ================= LEFT ================= */
+
+.dest-left {
+  margin-top: 0;
+}
 
 .dest-left img {
   width: 100%;
   border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.dest-left img:hover {
+  transform: scale(1.02);
 }
 
 .dest-icons {
   display: flex;
-  gap: 20px;
+  gap: 60px;
   margin-top: 20px;
 }
+
+/* ================= RIGHT CARDS ================= */
 
 .dest-right {
   display: flex;
@@ -83,6 +99,13 @@
   background: #f8f8f8;
   padding: 10px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .dest-card img {
@@ -90,26 +113,131 @@
   height: 300px;
   object-fit: cover;
   border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.dest-card:hover img {
+  transform: scale(1.05);
 }
 
 .dest-card span {
   color: orange;
-  cursor: pointer;
+  font-weight: 600;
 }
+
+/* ================= CTA ================= */
 
 .dest-cta {
-  background: #0d1b2a;
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
+  background-image: url("/images/aa-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dest-cta button {
-  background: orange;
+.dest-cta-overlay {
+  padding: 50px 30px;
+  text-align: center;
+  color: #fff;
+  max-width: 930px;
+}
+
+.dest-cta-overlay p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.highlight-text {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.dest-cta-overlay button {
+  background: #ff8c00;
   border: none;
-  padding: 12px 30px;
+  padding: 14px 36px;
   color: #fff;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  margin-top: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.dest-cta-overlay button:hover {
+  background: #ffa733;
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .dest-content {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+
+  .dest-icons {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .dest-card img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dest-hero {
+    height: 55vh;
+  }
+
+  .dest-hero-overlay h1 {
+    font-size: 32px;
+  }
+
+  .dest-intro h2 {
+    font-size: 26px;
+  }
+
+  .dest-content {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .dest-left p {
+    font-size: 16px !important;
+  }
+
+  .dest-icons {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .dest-card {
+    flex-direction: column;
+  }
+
+  .dest-card img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .dest-cta {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .dest-cta-overlay p {
+    font-size: 16px;
+  }
 }
