@@ -24,6 +24,15 @@ const App = () => {
 
   const navbarRef = useRef(null);
 
+  // ✅ ADD THIS ONLY
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [location.pathname]);
+
   useEffect(() => {
     initSmoothScroll();
 
@@ -45,6 +54,15 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
   return (
     <>
       {/* NAVBAR */}
