@@ -6,6 +6,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
 }
 html {
@@ -126,6 +128,13 @@ section {
   min-height: 100vh;
   padding: 60px 20px;
 }
+.dest-hero,
+.services-hero,
+.hero-section {
+  padding: 0 !important;
+  min-height: unset !important;
+}
+
 
 .hero-video {
   position: absolute;
