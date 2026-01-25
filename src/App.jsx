@@ -10,6 +10,8 @@ import ContactUs from "./components/ContactUs";
 import { Routes, Route, useNavigate ,useLocation } from "react-router-dom";
 import { initSmoothScroll } from "../smoothScroll";
 import { useState, useEffect, useRef } from "react";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 
 import LoginModal from "./components/LoginModal";
@@ -26,12 +28,16 @@ const App = () => {
 
   // ✅ ADD THIS ONLY
   useEffect(() => {
+  // thoda sa delay + smooth scroll
+  setTimeout(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "auto",
+      behavior: "smooth",
     });
-  }, [location.pathname]);
+  }, 120);
+}, [location.pathname]);
+
 
   useEffect(() => {
     initSmoothScroll();
@@ -56,15 +62,10 @@ const App = () => {
 
 
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, [location.pathname]);
+ 
   return (
     <>
+    <ScrollToTop /> 
       {/* NAVBAR */}
       <nav className="navbar" ref={navbarRef}>
         <div
