@@ -124,10 +124,11 @@ section {
 }
 
 /* Optional: styling for sections */
-section {
+.page-section {
   min-height: 100vh;
   padding: 60px 20px;
 }
+
 .dest-hero,
 .services-hero,
 .hero-section {
@@ -389,3 +390,7 @@ section {
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
 }
+
+
+
+

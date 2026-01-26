@@ -65,7 +65,7 @@ const AboutSection = () => {
   src="/images/about-main.jpg"
   alt="Main Lake"
   className="about-main-img"
-  style={{ marginTop: "32px" }}   // 👈 YE ADD KARO
+  style={{ marginTop: "32px" }}   //  YE ADD KARO
 />
 
            

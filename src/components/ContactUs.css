@@ -2,48 +2,73 @@
   font-family: "Poppins", sans-serif;
   background: #fff;
 }
+/*  ADD THIS  */
+.contact-page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.contact-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 10px !important;
+}
 
-/* HEADER */
+.contact-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
 .contact-header {
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 30px 20px 15px;
+  margin: 60px;
 }
 
 .contact-header h1 {
   font-size: 42px;
-  margin-bottom: 15px;
+  margin: 0 0 8px 0;
 }
 
 .contact-header p {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
   color: #555;
 }
 
-/* CONTENT */
+/* =========================
+   CONTENT
+========================= */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  padding: 40px 10%;
+  gap: 40px;
+  padding: 0 10%;
+  margin-top: 60px;
 }
 
-/* LEFT */
+/* =========================
+   LEFT INFO
+========================= */
 .contact-info h3 {
-  margin-top: 20px;
-  margin-bottom: 8px;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 
 .contact-info p {
-  color: #444;
-  line-height: 1.6;
+  margin: 0 0 12px 0;
 }
 
 .contact-info .email {
   color: #1a73e8;
 }
 
-/* FORM */
+/* =========================
+   FORM
+========================= */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -61,11 +86,29 @@
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
+
+    /* SHADOW */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    /* smooth interactions */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-form textarea {
   resize: none;
 }
+
+/*  ADD THIS BELOW */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 6px 18px rgba(255, 140, 0, 0.35);
+}
+
+/* =========================
+   TERMS
+========================= */
 
 .terms {
   margin-top: 15px;

@@ -42,7 +42,7 @@ const ContactUs = () => {
           <input type="email" placeholder="" />
 
           <label>Message:</label>
-          <textarea rows="6"></textarea>
+          <textarea rows="18"></textarea>
 
           <p className="terms">
             By proceeding ahead, you agree to our

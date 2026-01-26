@@ -106,7 +106,7 @@ const AboutReadMore = () => {
 <section
   className="about-whatwercreating"
   style={{
-    padding: "80px ,20px",
+    padding: "80px 20px",
     color: "#000",
     display: "flex",
     flexDirection: "column",

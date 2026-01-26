@@ -5,13 +5,23 @@
 /* HERO */
 .services-hero {
   position: relative;
-  height: 100vh;
+  height: 85vh;
 }
 
 .services-hero-img {
   width: 100vw;
   height: 100%;
   object-fit: cover;
+
+    /*  reduce shine */
+    filter: brightness(0.85) contrast(0.95);
+
+    /*  initial state (IMPORTANT) */
+    opacity: 0;
+    transform: translateY(40px);
+  
+    /*  slide UP animation */
+    animation: slideUpFade 1.2s ease-out forwards;
 }
 
 .services-hero-overlay {
@@ -22,10 +32,24 @@
   align-items: center;
   justify-content: center;
   color: white;
+
+
+  /*  dark overlay */
+  background: rgba(0, 0, 0, 0.35);
+
+  /* optional text animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFade 1.4s ease-out forwards;
 }
 
 .services-hero-overlay h1 {
   font-size: 52px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.services-hero-overlay p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* SERVICES GRID */
@@ -121,5 +145,17 @@
 
   .services-hero-overlay h1 {
     font-size: 36px;
+  }
+}
+
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* starts lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
