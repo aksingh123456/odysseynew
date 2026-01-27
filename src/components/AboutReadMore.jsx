@@ -59,7 +59,7 @@ const AboutReadMore = () => {
       <section
   className="about-hero"
   style={{
-    height: "75vh",
+    height: "90vh",
     background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
     url("/images/about-hero.jpg") center/cover`,
     color: "#fff",
