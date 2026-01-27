@@ -2,35 +2,18 @@
   font-family: "Poppins", sans-serif;
   background: #fff;
 }
-/*  ADD THIS  */
-.contact-page {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-.contact-header {
-  margin-bottom: 0 !important;
-  padding-bottom: 10px !important;
-}
-
-.contact-content {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-
 
 /* =========================
    HEADER
 ========================= */
 .contact-header {
   text-align: center;
-  padding: 30px 20px 15px;
-  margin: 60px;
+  padding: 40px 20px 20px;
 }
 
 .contact-header h1 {
   font-size: 42px;
-  margin: 0 0 8px 0;
+  margin-bottom: 10px;
 }
 
 .contact-header p {
@@ -46,20 +29,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 0 10%;
-  margin-top: 60px;
+  padding: 40px 10% 0;
 }
 
 /* =========================
    LEFT INFO
 ========================= */
 .contact-info h3 {
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 6px;
 }
 
 .contact-info p {
-  margin: 0 0 12px 0;
+  margin-bottom: 12px;
+  color: #444;
 }
 
 .contact-info .email {
@@ -86,19 +69,14 @@
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
-
-    /* SHADOW */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-
-    /* smooth interactions */
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-form textarea {
   resize: none;
 }
 
-/*  ADD THIS BELOW */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -109,7 +87,6 @@
 /* =========================
    TERMS
 ========================= */
-
 .terms {
   margin-top: 15px;
   font-size: 12px;
@@ -119,4 +96,118 @@
 .terms span {
   color: #ff8c00;
   cursor: pointer;
+}
+/* =========================
+   SUCCESS MODAL
+========================= */
+
+.success-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.success-modal {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: center;
+  width: 340px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.success-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #8fd694;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-icon span {
+  font-size: 42px;
+  color: #fff;
+}
+
+.success-modal h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.success-modal p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.success-modal button {
+  padding: 10px 26px;
+  border: none;
+  background: #ff8c00;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   FORM LAYOUT FIX
+========================= */
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+}
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.send-btn {
+  margin-top: 10px;
+  align-self: flex-start;
+  background: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #e67600;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   SPACE BEFORE FOOTER
+========================= */
+
+.contact-page {
+  padding-bottom: 100px;
 }
