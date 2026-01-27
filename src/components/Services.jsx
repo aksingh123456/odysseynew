@@ -30,7 +30,7 @@ const services = [
   },
   {
     title: "Cruise Service",
-    desc: "Cruise vacations with shore excursions and port transfers.",
+    desc: "Best hotels at best prices worldwide.",
     img: "/images/serviceimg6.jpg",
     link: "/service-more",
   },
