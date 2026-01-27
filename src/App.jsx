@@ -53,8 +53,7 @@ const App = () => {
     { path: "/destination-more", label: "Destination" },
     { path: "/service-more", label: "Our Service" },
     { path: "/contact", label: "Contact Us" },
-    { path: "/login", label: "Login / SignUp" },
-    { path: "/admin", label: "Admin Panel" }, // optional
+   
   ];
 
   return (
@@ -111,12 +110,12 @@ const App = () => {
             </>
           }
         />
-        <Route path="/login" element={<LoginModal />} />
+       
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<AboutReadMore />} />
         <Route path="/service-more" element={<ServicesMore />} />
         <Route path="/destination-more" element={<DestinationMore />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        
       </Routes>
 
       <Footer className="page-section" />
