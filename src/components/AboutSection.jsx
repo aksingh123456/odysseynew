@@ -131,6 +131,7 @@ const AboutSection = () => {
     fontWeight: "600",
     textDecoration: "none",
     color: "#000",
+     textDecoration: "underline", 
   }}
 >
   Read More
