@@ -55,6 +55,21 @@ const Footer = () => {
         </div>
 
       </div>
+
+ {/*  COPYRIGHT BAR */}
+ <div
+        style={{
+          borderTop: "1px solid rgba(255,255,255,0.2)",
+          marginTop: "40px",
+          padding: "15px 0",
+          textAlign: "center",
+          fontSize: "13px",
+          color: "#ccc",
+        }}
+      >
+        © {new Date().getFullYear()} Odyssey Heritage. All rights reserved.
+      </div>
+
     </footer>
   );
 };

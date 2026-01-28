@@ -62,13 +62,52 @@ const App = () => {
 
       {/* NAVBAR */}
       <nav className="navbar" ref={navbarRef}>
-        <div
-          className="logo"
-          onClick={() => navigate("/")}
-          style={{ cursor: "pointer" }}
-        >
-          <img src="/images/odyssey-logo.png" alt="Odyssey Logo" style={{ height: "40px" }} />
-        </div>
+      <div
+  className="logo"
+  onClick={() => navigate("/")}
+  style={{
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  }}
+>
+  <img
+    src="/images/odyssey-logo.png"
+    alt="Odyssey Logo"
+    style={{ height: "40px" }}
+  />
+
+<span style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
+  <span
+    style={{
+      fontSize: "18px",
+      fontWeight: "600",
+      color: "#1f2933",
+    }}
+  >
+    Odyssey
+  </span>
+  <span
+    style={{
+      fontSize: "13px",
+      letterSpacing: "2px",
+      color: "#ff8c00",
+      textTransform: "uppercase",
+    }}
+  >
+    Heritage
+  </span>
+</span>
+
+
+
+
+
+
+
+</div>
+
 
         <ul className="nav-links">
           {navLinks.map((link) => (
