@@ -469,7 +469,7 @@ memory feels like
    }}>  
   <h4
     style={{
-      fontSize: "35px",
+      fontSize: "20px",
       fontWeight: "400",
       marginBottom: "30px",
       opacity: "0.9",
