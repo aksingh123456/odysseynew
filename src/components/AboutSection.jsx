@@ -141,6 +141,7 @@ const AboutSection = () => {
 
       </div>
     </section>
+  
   );
 };
 

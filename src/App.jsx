@@ -11,7 +11,9 @@ import AdminPanel from "./components/AdminPanel"; // Tera separate file
 import LoginModal from "./components/LoginModal"; // Tera separate file
 
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-import { initSmoothScroll } from "../smoothScroll";
+
+
+
 import { useState, useEffect, useRef } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -31,20 +33,30 @@ const App = () => {
     }, 120);
   }, [location.pathname]);
 
-  // Smooth scroll + Navbar show/hide
+  //   Navbar show/hide
+ 
+
   useEffect(() => {
-    initSmoothScroll();
     const sections = document.querySelectorAll(".page-section");
+  
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) navbarRef.current.classList.add("show-navbar");
-        else navbarRef.current.classList.remove("show-navbar");
+        if (!navbarRef.current) return;
+  
+        if (entry.isIntersecting) {
+          navbarRef.current.classList.add("show-navbar");
+        } else {
+          navbarRef.current.classList.remove("show-navbar");
+        }
       },
       { threshold: 0.1 }
     );
+  
     sections.forEach((sec) => observer.observe(sec));
+  
     return () => observer.disconnect();
   }, []);
+  
 
   // Navbar Links
   const navLinks = [
