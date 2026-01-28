@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AboutReadMore = () => {
   const navigate = useNavigate();
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoverText, setHoverText] = useState(false);
 
 
   useEffect(() => {
@@ -70,16 +71,20 @@ const AboutReadMore = () => {
   }}
 >
   {/* Text wrapper */}
-  <div style={{ marginTop: "100px" }}>
-    <h1
-      style={{
-        marginBottom: "20px",
-        fontSize: "64px",
-        fontWeight: "600",
-      }}
-    >
-      About Us
-    </h1>
+ <div style={{ marginTop: "100px" }}>
+  <div
+    style={{
+      marginBottom: "20px",
+      fontSize: hoverText ? "70px" : "64px", // hover pe bada
+      fontWeight: "600",
+      cursor: "pointer",
+      transition: "font-size 0.3s ease", // smooth transition
+    }}
+    onMouseEnter={() => setHoverText(true)}
+    onMouseLeave={() => setHoverText(false)}
+  >
+    About Us
+  </div>
 
     <p
       style={{

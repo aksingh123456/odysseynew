@@ -42,6 +42,31 @@
   color: #fff;
 }
 
+/* 👇 Destinations text */
+.dest-hero-overlay h1 {
+  font-size: 64px;
+  font-weight: 600;
+  cursor: pointer;                 /* pointer cursor */
+  transition: transform 0.3s ease, /* smooth pop */
+              text-shadow 0.3s ease;
+}
+
+/* 👇 Hover pop-out effect */
+.dest-hero-overlay h1:hover {
+  transform: scale(1.12);          /* thoda bada */
+  text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dest-hero-overlay h1 {
   font-size: 70px;
   text-shadow: 0 4px 12px rgba(0,0,0,0.6);

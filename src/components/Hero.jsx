@@ -25,11 +25,11 @@ const Hero = () => {
 
         <button className="hero-btn">Know More</button>
 
-        <div className="scroll-down">
-          <span>Scroll Down</span>
-          <div className="arrow"></div>
-          
-        </div>
+       <div className="scroll-down">
+        <span>Scroll Down</span>
+  <div className="v-shape"></div>
+</div>
+
       </div>
        
     </section>

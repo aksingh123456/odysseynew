@@ -88,7 +88,7 @@ const Services = () => {
           right: "30px",
           bottom: "20px",
           fontWeight: "600",
-         
+          fontSize: "10px", 
           color: "#000",
            textDecoration: "underline", 
         }}

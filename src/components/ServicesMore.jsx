@@ -94,7 +94,7 @@ const ServicesMore = () => {
   >
     Looking to see you soon!
   </p>
-  <button
+  {/* <button
     style={{
       background: "#ff8c00",
       border: "none",
@@ -117,7 +117,7 @@ const ServicesMore = () => {
     }}
   >
     Explore Now
-  </button>
+  </button> */}
 </section>
     </div>
   );

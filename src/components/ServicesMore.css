@@ -41,13 +41,26 @@
   opacity: 0;
   transform: translateY(20px);
   animation: slideUpFade 1.4s ease-out forwards;
+ 
+  transition: 
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 .services-hero-overlay h1 {
+   cursor: pointer; 
   font-size: 52px;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+ transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    text-shadow 0.45s ease;
 }
 
+/* 👇 Hover effect */
+.services-hero-overlay h1:hover {
+  transform: scale(1.08); /* thoda subtle, premium */
+  text-shadow: 0 14px 36px rgba(0, 0, 0, 0.8);
+}
 .services-hero-overlay p {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
