@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import "swiper/css";
+
 import "./DestinationMore.css"; // CSS below
 
 const destinations = [
@@ -116,7 +117,10 @@ const DestinationMore = () => {
             <br/>
             <span className="highlight-text">Explore the world with Odyssey Heritage.</span>
           </p>
-          <button>Contact Us</button>
+        
+<Link to="/contact">
+  <button>Contact Us</button>
+</Link>
         </div>
       </section>
 
