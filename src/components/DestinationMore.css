@@ -70,6 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 90px;
 }
 
 .dest-cta-overlay {
@@ -113,7 +114,7 @@
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  height: 380px; /* same as services */
+  height: 500px; /* same as services */
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
@@ -127,7 +128,7 @@
 
 .dest-service-card img {
   width: 100%;
-  height: 230px; /* image height */
+  height: 400px; /* image height */
   object-fit: cover;
 }
 
