@@ -129,7 +129,7 @@ const AboutSection = () => {
     right: "-80px",
     bottom: "-200px",
     fontWeight: "600",
-    textDecoration: "none",
+    
     color: "#000",
      textDecoration: "underline", 
   }}

@@ -78,27 +78,37 @@ const App = () => {
     style={{ height: "40px" }}
   />
 
-<span style={{ display: "flex", alignItems: "baseline", gap: "6px" }}>
+<span
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    lineHeight: "1.1",
+  }}
+>
   <span
     style={{
-      fontSize: "18px",
-      fontWeight: "600",
-      color: "#1f2933",
+      fontSize: "13px",        // smaller Odyssey
+      fontWeight: "500",
+      letterSpacing: "0.6px",
+      color: "#ff8c00",        // 🔁 reversed color
     }}
   >
     Odyssey
   </span>
+
   <span
     style={{
-      fontSize: "13px",
-      letterSpacing: "2px",
-      color: "#ff8c00",
+      fontSize: "7px",        // smaller than Odyssey
+      letterSpacing: "1.8px",
+      color: "#1f2933",        // 🔁 reversed color
       textTransform: "uppercase",
     }}
   >
     Heritage
   </span>
 </span>
+
+
 
 
 
