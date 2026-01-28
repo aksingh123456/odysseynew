@@ -90,17 +90,20 @@ const DestinationMore = () => {
           }}
         >
           {destinations.map((d, i) => (
-            <SwiperSlide key={i}>
-              <Link to={d.link} style={{ textDecoration: "none", color: "inherit" }}>
-                <div className="service-card">
-                  <img src={d.img} alt={d.title} />
-                  <div className="overlay">
-                    <h3>{d.title}</h3>
-                    <p>{d.desc}</p>
-                  </div>
-                </div>
-              </Link>
-            </SwiperSlide>
+           <SwiperSlide key={i}>
+  <Link to={d.link} style={{ textDecoration: "none", color: "inherit" }}>
+    <div className="dest-service-card">
+      <img src={d.img} alt="destination" />
+
+      {/* CONTENT BELOW IMAGE */}
+      <div className="dest-card-content">
+        {d.title && <h3>{d.title}</h3>}
+        {d.desc && <p>{d.desc}</p>}
+      </div>
+    </div>
+  </Link>
+</SwiperSlide>
+
           ))}
         </Swiper>
       </section>
