@@ -302,7 +302,7 @@ memory feels like
   className="story-section"
   style={{
     position: "relative",
-    padding: "50px 80px",
+    padding: "150px 80px",
     backgroundImage: `
       linear-gradient(rgba(10,30,30,0.75), rgba(10,30,60,0.75)),
       url("/images/story-bg.jpg")
@@ -318,8 +318,8 @@ memory feels like
     style={{
       fontSize: "50px",
       fontWeight: "600",
-      marginBottom: "100px",
-      marginTop: "120px", 
+      marginBottom: "10px",
+      marginTop: "-90px", 
       letterSpacing: "1px",
     }}
   >
@@ -331,7 +331,7 @@ memory feels like
       fontSize: "28px",
       fontWeight: "500",
       marginBottom: "30px",
-      marginTop: "85px",
+      marginTop: "60px",
       opacity: "0.9",
     }}
   >

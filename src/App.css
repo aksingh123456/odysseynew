@@ -304,29 +304,6 @@ section {
 }
 
 
-
-
-
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-.service-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-   height: 380px; 
-}
-
-.service-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .service-card .overlay {
   position: absolute;
   bottom: 0;
@@ -379,11 +356,11 @@ section {
 }
 
 .image-row img {
-  
+   background: transparent;
   object-fit: cover;
   
   /* subtle white background */
-  background: #fff;
+ 
   /* lifted shadow for all images */
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -429,6 +406,7 @@ section {
   width: 260px;
   height: 340px;
   transform: translateY(-40px) scale(1.08);
+    border: 15px solid #fff;
   z-index: 5;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -454,6 +432,37 @@ section {
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
 }
+/* Footer headings */
+footer h4 {
+  font-size: 16px;
+  font-weight: 700; /* bold */
+  margin-bottom: 15px;
+  color: #fff; /* ya dark footer ho to */
+}
+
+/* Remove default list style */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer list items */
+footer ul li {
+  font-size: 14px;
+  font-weight: 400; /* light */
+  color: #cfcfcf; /* halka color */
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover effect like websites */
+footer ul li:hover {
+  color: #ffffff;
+  padding-left: 6px; /* thoda sa slide effect */
+}
+
 .scroll-down {
   position: absolute;
   bottom: 20px; /* screen ke bottom pe */
@@ -489,6 +498,90 @@ section {
   }
 }
 
+/* === Responsive Overrides === */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .image-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .navbar {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .serviceshead {
+    font-size: 28px;
+  }
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-row img,
+  .tilt-left,
+  .tilt-right,
+  .center-img {
+    width: 200px;
+    height: 260px;
+    border: 10px solid #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .serviceshead {
+    font-size: 24px;
+  }
+
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .image-row img,
+  .tilt-left,
+  .tilt-right,
+  .center-img {
+    width: 160px;
+    height: 220px;
+    border: 8px solid #fff;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
 
 
 

@@ -7,8 +7,7 @@ import DestinationMore from "./components/DestinationMore";
 import ServicesMore from "./components/ServicesMore";
 import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
-import AdminPanel from "./components/AdminPanel"; // Tera separate file
-import LoginModal from "./components/LoginModal"; // Tera separate file
+
 
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 

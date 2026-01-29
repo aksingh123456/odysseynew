@@ -94,8 +94,7 @@ const DestinationMore = () => {
            <SwiperSlide key={i}>
   <Link to={d.link} style={{ textDecoration: "none", color: "inherit" }}>
     <div className="dest-service-card">
-      <img src={d.img} alt="destination" />
-
+      <div className="dest-image-wrap"> <img src={d.img} alt="destination" /></div>
       {/* CONTENT BELOW IMAGE */}
       <div className="dest-card-content">
         {d.title && <h3>{d.title}</h3>}

@@ -14,7 +14,7 @@ const ImageShowcase = () => {
      
 
       {/* CONTENT */}
-      <h2>
+      <h2 >
         What offer the Best, so you can <br />
         create memory that last
       </h2>
