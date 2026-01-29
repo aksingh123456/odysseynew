@@ -195,3 +195,115 @@
   line-height: 1.4;
 }
 
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .dest-hero-overlay h1 {
+    font-size: 50px;
+  }
+
+  .dest-intro h2 {
+    font-size: 28px;
+  }
+
+  .dest-intro p {
+    font-size: 15px;
+  }
+
+  .dest-cta-overlay p {
+    font-size: 20px;
+  }
+
+  .dest-service-card {
+    height: auto; /* let cards adjust height */
+  }
+
+  .dest-service-card img {
+    height: 300px;
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .dest-hero {
+    height: 70vh;
+  }
+
+  .dest-hero-overlay h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .dest-intro h2 {
+    font-size: 24px;
+  }
+
+  .dest-intro p {
+    font-size: 14px;
+  }
+
+  .dest-cta-overlay p {
+    font-size: 18px;
+  }
+
+  .dest-cta-overlay {
+    padding: 30px 20px;
+  }
+
+  .dest-service-card img {
+    height: 250px;
+  }
+
+  .dest-card-content h3 {
+    font-size: 16px;
+  }
+
+  .dest-card-content p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .dest-hero {
+    height: 60vh;
+  }
+
+  .dest-hero-overlay h1 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  .dest-intro h2 {
+    font-size: 20px;
+  }
+
+  .dest-intro p {
+    font-size: 13px;
+  }
+
+  .dest-cta-overlay p {
+    font-size: 16px;
+  }
+
+  .dest-cta-overlay {
+    padding: 20px 15px;
+  }
+
+  .dest-service-card img {
+    height: 200px;
+  }
+
+  .dest-card-content h3 {
+    font-size: 14px;
+  }
+
+  .dest-card-content p {
+    font-size: 12px;
+  }
+
+  .dest-hero-overlay h1:hover {
+    transform: none; /* hover effect disable on small devices */
+  }
+}

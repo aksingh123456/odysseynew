@@ -78,3 +78,85 @@
 .terms span {
   color: orange;
 }
+/* ===================== RESPONSIVE – AUTH MODAL ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .auth-modal {
+    width: 380px;
+    padding: 26px;
+  }
+
+  .auth-modal h2 {
+    font-size: 22px;
+  }
+
+  .auth-btn {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .auth-modal {
+    width: 90%;
+    max-width: 360px;
+    padding: 24px;
+  }
+
+  .row {
+    flex-direction: column; /* 🔥 inputs stack */
+    gap: 0;
+  }
+
+  .auth-modal input {
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .auth-btn {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  .switch {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .auth-modal {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .auth-modal h2 {
+    font-size: 20px;
+  }
+
+  .close-btn {
+    font-size: 18px;
+    top: 8px;
+    right: 10px;
+  }
+
+  .auth-modal input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .auth-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot {
+    font-size: 12px;
+  }
+
+  .terms {
+    font-size: 11px;
+  }
+}
