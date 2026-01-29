@@ -524,7 +524,7 @@ footer ul li:hover {
   .image-row {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
   }
 
   .image-row .tilt-left,
@@ -535,19 +535,26 @@ footer ul li:hover {
     border: 12px solid #fff;
   }
 
-  .image-row .tilt-left,
-  .image-row .tilt-right {
-    transform: rotate(0deg) translateY(0);
+  /* 🔥 MOBILE TILT (SOFT, SAFE) */
+  .image-row .tilt-left {
+    transform: rotate(-10deg);
+    margin-right: 40px;   /* left feel */
   }
 
   .image-row .center-img {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    z-index: 3;
+  }
+
+  .image-row .tilt-right {
+    transform: rotate(10deg);
+    margin-left: 40px;    /* right feel */
   }
 }
 
 @media (max-width: 480px) {
   .image-row {
-    gap: 24px;
+    gap: 28px;
   }
 
   .image-row .tilt-left,
@@ -558,10 +565,17 @@ footer ul li:hover {
     border: 10px solid #fff;
   }
 
-  /* kill hover + tilt on mobile */
-  .tilt-left:hover,
-  .tilt-right:hover,
-  .center-img:hover {
-    transform: none;
+  .image-row .tilt-left {
+    transform: rotate(-8deg);
+    margin-right: 30px;
+  }
+
+  .image-row .tilt-right {
+    transform: rotate(8deg);
+    margin-left: 30px;
+  }
+
+  .image-row .center-img {
+    transform: scale(1.05);
   }
 }
