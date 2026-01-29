@@ -9,6 +9,8 @@ import DestinationMore from "./components/DestinationMore";
 import ServicesMore from "./components/ServicesMore";
 import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
+import Testimonial from "./components/Testimonial";
+
 
 
 
@@ -177,6 +179,8 @@ const App = () => {
               <AboutSection />
               <Services />
               <ImageShowcase />
+              <Testimonial />
+
             </>
           }
         />
