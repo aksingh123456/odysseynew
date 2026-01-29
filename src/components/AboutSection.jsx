@@ -104,7 +104,7 @@ const AboutSection = () => {
             </div>
 
             <div>
-              <Counter start={80} end={100} />
+              <Counter start={50} end={100} />
               <span>Partner-first Approach</span>
             </div>
           </div>

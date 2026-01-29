@@ -1,4 +1,6 @@
 import Hero from "./components/Hero";
+import ChatBot from "./components/ChatBot";
+
 import AboutSection from "./components/AboutSection";
 import Services from "./components/Services";
 import ImageShowcase from "./components/ImageShowcase";
@@ -9,6 +11,9 @@ import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
 import AdminPanel from "./components/AdminPanel"; // Tera separate file
 import LoginModal from "./components/LoginModal"; // Tera separate file
+
+
+
 
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 
@@ -23,6 +28,8 @@ const App = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [hovered, setHovered] = useState(null);
+ 
+
 
   const navbarRef = useRef(null);
 
@@ -56,6 +63,9 @@ const App = () => {
   
     return () => observer.disconnect();
   }, []);
+
+  
+  
   
 
   // Navbar Links
@@ -178,8 +188,13 @@ const App = () => {
         <Route path="/destination-more" element={<DestinationMore />} />
         
       </Routes>
+      <ChatBot />
 
       <Footer className="page-section" />
+
+  
+
+
     </>
   );
 };
