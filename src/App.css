@@ -588,3 +588,67 @@ footer ul li:hover {
 
 
 
+/* ===================== FIX TILT IMAGES ON MOBILE ===================== */
+
+/* Tablets & below */
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .tilt-left,
+  .tilt-right,
+  .center-img {
+    width: 220px;
+    height: 300px;
+    border: 12px solid #fff;
+  }
+
+  /* Reduce tilt on tablet */
+  .tilt-left {
+    transform: rotate(-8deg) translateY(0);
+  }
+
+  .tilt-right {
+    transform: rotate(8deg) translateY(0);
+  }
+
+  .center-img {
+    transform: translateY(0) scale(1.05);
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .image-row {
+    gap: 24px;
+  }
+
+  .tilt-left,
+  .tilt-right,
+  .center-img {
+    width: 180px;
+    height: 240px;
+    border: 10px solid #fff;
+  }
+
+  /* 🔥 Remove heavy tilt on mobile */
+  .tilt-left,
+  .tilt-right {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  .center-img {
+    transform: scale(1.05);
+  }
+
+  /* Disable hover effects on touch devices */
+  .tilt-left:hover,
+  .tilt-right:hover,
+  .center-img:hover {
+    transform: none;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  }
+}
