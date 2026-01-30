@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser"; // 1️⃣ EmailJS import
 import "./ContactUs.css";
 
 const ContactUs = () => {
@@ -8,39 +9,34 @@ const ContactUs = () => {
   const [status, setStatus] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
 
-  // ✅ API URL from ENV, remove trailing slash
-  const API_URL = import.meta.env.VITE_MAILER_API_URL.replace(/\/$/, "");
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
     try {
-      const res = await fetch(`${API_URL}/send-mail`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      });
+      const templateParams = { name, email, message };
 
-      const data = await res.json();
+      // 2️⃣ Send email using EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
-      if (data.success) {
-        setShowSuccess(true);
-        setStatus("");
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        setStatus(`Failed to send message ❌: ${data.message}`);
-      }
+      setShowSuccess(true);
+      setStatus("");
+      setName("");
+      setEmail("");
+      setMessage("");
     } catch (error) {
-      setStatus("Server error ❌");
+      console.error("MAIL ERROR 👉", error);
+      setStatus("Failed to send message ❌");
     }
   };
 
   return (
     <div className="contact-page">
-      {/* HEADING */}
       <section className="contact-header">
         <h1>Contact Us</h1>
         <p>
@@ -50,9 +46,7 @@ const ContactUs = () => {
         </p>
       </section>
 
-      {/* CONTENT */}
       <section className="contact-content">
-        {/* LEFT INFO */}
         <div className="contact-info">
           <h3>Address</h3>
           <p>
@@ -68,7 +62,6 @@ const ContactUs = () => {
           </p>
         </div>
 
-        {/* RIGHT FORM */}
         <div className="contact-form">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -118,7 +111,6 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* SUCCESS MODAL */}
       {showSuccess && (
         <div className="success-overlay">
           <div className="success-modal">
