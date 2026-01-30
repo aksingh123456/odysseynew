@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { botFAQs } from "../data/botFAQs";
 
 const ChatBot = () => {
+  // ✅ ALL HOOKS AT TOP
   const location = useLocation();
-
-  // Show chatbot ONLY on Home page
-  if (location.pathname !== "/") return null;
+  const navigate = useNavigate();
 
   const [open, setOpen] = useState(false);
   const [selectedFAQ, setSelectedFAQ] = useState(null);
+
+  // ✅ CONDITIONAL RETURN AFTER HOOKS
+  if (location.pathname !== "/") return null;
 
   return (
     <>
@@ -168,24 +170,23 @@ const ChatBot = () => {
                 >
                   ← Back to FAQs
                 </p>
-
-                <div
-                  onClick={() => {
-                    setOpen(false);
-                    window.location.href = "/contact";
-                  }}
-                  style={{
-                    padding: "10px",
-                    background: "#ff8c00",
-                    color: "#fff",
-                    borderRadius: "20px",
-                    textAlign: "center",
-                    fontSize: "13px",
-                    cursor: "pointer",
-                  }}
-                >
-                  For more details, Contact Us
-                </div>
+<div
+  onClick={() => {
+    setOpen(false);
+    navigate("/contact");
+  }}
+  style={{
+    padding: "10px",
+    background: "#ff8c00",
+    color: "#fff",
+    borderRadius: "20px",
+    textAlign: "center",
+    fontSize: "13px",
+    cursor: "pointer",
+  }}
+>
+  For more details, Contact Us
+</div>
               </>
             )}
           </div>
