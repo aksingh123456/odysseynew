@@ -47,12 +47,67 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h4>Let’s Connect</h4>
-          <input placeholder="Email" />
-          <input placeholder="Ask your question" />
-          <button>Submit</button>
-        </div>
+       <div>
+  <h4 style={{ marginBottom: "14px" }}>Let’s Connect</h4>
+
+  <p
+    style={{
+      marginBottom: "10px",
+      fontWeight: "600",
+      fontSize: "14px",
+      letterSpacing: "0.3px",
+    }}
+  >
+    Odyssey Heritage
+  </p>
+
+  <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+    <a
+      href="tel:+918130659133"
+      style={{
+        color: "#e5e5e5",
+        textDecoration: "none",
+        fontSize: "13px",
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+      }}
+    >
+      <span style={{ fontSize: "14px" }}>📞</span>
+      +91 81306 59133
+    </a>
+
+    <a
+      href="mailto:info@odysseyheritage.co.in"
+      style={{
+        color: "#e5e5e5",
+        textDecoration: "none",
+        fontSize: "13px",
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+      }}
+    >
+      <span style={{ fontSize: "14px" }}>📩</span>
+      info@odysseyheritage.co.in
+    </a>
+
+    <a
+      href="mailto:sales@odysseyheritage.co.in"
+      style={{
+        color: "#e5e5e5",
+        textDecoration: "none",
+        fontSize: "13px",
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+      }}
+    >
+      <span style={{ fontSize: "14px" }}>📩</span>
+      sales@odysseyheritage.co.in
+    </a>
+  </div>
+</div>
 
       </div>
 
