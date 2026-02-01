@@ -122,7 +122,7 @@ const Footer = () => {
           color: "#ccc",
         }}
       >
-        © {new Date().getFullYear()} Odyssey Heritage. All rights reserved.
+        © {2024} Odyssey Heritage. All rights reserved.
       </div>
 
     </footer>
