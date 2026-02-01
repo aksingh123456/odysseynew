@@ -111,7 +111,7 @@ const AboutSection = () => {
           
 <p
   style={{
-    marginBottom: "-90px",
+    marginBottom: "-100px",
     marginRight: "85px",
     paddingTop: "20px",
     paddingLeft: "81px",

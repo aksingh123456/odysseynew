@@ -243,26 +243,22 @@ section {
   margin: 12px 0;
 }
 
-
-
-
-
-
-
 .about-main-img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: block;             /* inline gap remove */
   object-fit: cover;
-  border-radius: 12px;        /* thoda andar curve */
+  border-radius: 1px; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border: 15px solid #fff;
 }
 
 
 
 .about-small-card {
   position: absolute;
-  bottom: 50px;
-  right: -60px;
+  bottom: 20px;
+  right: -70px;
   width: 220px;
   background: white;
   border-radius: 1px;

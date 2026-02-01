@@ -139,7 +139,7 @@
   background: #fff;
   border-radius: 1px;
   overflow: hidden;
-  height: 650px; /* same as services */
+  height: 600px; /* same as services */
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
