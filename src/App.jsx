@@ -93,6 +93,7 @@ const App = () => {
     display: "flex",
     alignItems: "center",
     gap: "10px",
+   paddingLeft: "25px",
   }}
 >
   <img
@@ -133,12 +134,6 @@ const App = () => {
 
 
 
-
-
-
-
-
-
 </div>
 
 
@@ -152,6 +147,9 @@ const App = () => {
               style={{
                 cursor: "pointer",
                 paddingBottom: "6px",
+               paddingRight: "25px" ,
+              gap: "1px",
+                
                 color:
                   hovered === link.path || location.pathname === link.path
                     ? "orange"

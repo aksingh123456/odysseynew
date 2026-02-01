@@ -139,7 +139,7 @@
   background: #fff;
   border-radius: 1px;
   overflow: hidden;
-  height: 550px; /* same as services */
+  height: 650px; /* same as services */
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
@@ -149,7 +149,7 @@
      flex-shrink: 0; 
 }
 .dest-image-wrap {
-  height: 380px;           /* 🔥 FIXED HEIGHT */
+  height: 450px;           /* 🔥 FIXED HEIGHT */
   width: 100%;
   overflow: hidden;
   flex-shrink: 0;          /* 🔥 CRITICAL */
@@ -178,7 +178,7 @@
 
 /* TEXT BELOW IMAGE */
 .dest-card-content {
-  padding: 16px 18px;
+ padding: 16px 18px ;
   flex: 1;
 }
 

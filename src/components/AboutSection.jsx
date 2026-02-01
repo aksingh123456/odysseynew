@@ -65,7 +65,7 @@ const AboutSection = () => {
   src="/images/about-main.jpg"
   alt="Main Lake"
   className="about-main-img"
-  style={{ marginTop: "32px" }}   //  YE ADD KARO
+  style={{ marginTop: "38px" }}   //  YE ADD KARO
 />
 
            
@@ -111,11 +111,14 @@ const AboutSection = () => {
           
 <p
   style={{
-    marginTop: "24px",
+    marginBottom: "-90px",
     marginRight: "85px",
+    paddingTop: "20px",
+    paddingLeft: "81px",
     fontSize: "15px",
     fontWeight: "600",   // 👈 thoda bold
-    color: "#333",       // 👈 darker like image
+    color: "#333",   
+    whiteSpace: "nowrap",    // 👈 darker like image
   }}
 >
   Ease, trust, and journeys that unfold gently

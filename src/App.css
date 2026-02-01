@@ -89,7 +89,7 @@ html {
 .nav-links {
 
   display: flex;
-  gap: 40px;
+  gap: 15px;
   font-size: medium;
   list-style: none;
   margin-bottom: 10px;
@@ -104,6 +104,7 @@ html {
 }
 
 .nav-links li:hover {
+  
   color: #ffb703;
 }
 .nav-links li.active {
@@ -229,6 +230,9 @@ section {
 .about-left {
   position: relative;
   width: 50%;
+  
+  
+  
 }
 /* Parent should be relative */
 
@@ -242,15 +246,23 @@ section {
 
 
 
+
+
+
 .about-main-img {
   width: 100%;
-  border-radius: 18px;
+  height: 100%;
+  display: block;             /* inline gap remove */
+  object-fit: cover;
+  border-radius: 12px;        /* thoda andar curve */
 }
+
+
 
 .about-small-card {
   position: absolute;
   bottom: 50px;
-  right: -40px;
+  right: -60px;
   width: 220px;
   background: white;
   border-radius: 1px;
@@ -269,8 +281,10 @@ section {
 }
 
 .about-right {
-  width: 50%;
+  width: 100%;
    position: relative; 
+   padding-left: 50px;
+   padding-top:50px
 }
 
 
