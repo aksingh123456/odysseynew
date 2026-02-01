@@ -94,7 +94,7 @@ const AboutSection = () => {
 
           <div className="about-stats" style={{fontWeight:"bold" ,marginBottom:"40px"}}>
             <div>
-              <Counter start={50} end={111} />
+              <Counter start={100} end={200} />
               <span>Travel Experiences</span>
             </div>
 
@@ -104,7 +104,7 @@ const AboutSection = () => {
             </div>
 
             <div>
-              <Counter start={50} end={100} />
+              <Counter start={900} end={1000} />
               <span>Partner-first Approach</span>
             </div>
           </div>
