@@ -48,6 +48,7 @@ const Services = () => {
         loop
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         spaceBetween={20}
+         style={{ paddingBottom: "10px" }}
         breakpoints={{
           320: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
@@ -59,8 +60,8 @@ const Services = () => {
             {/* Card Link */}
             <Link to={s.link} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="service-card" style={{ position: "relative", overflow: "hidden", borderRadius: "10px" , height: "500px",       // ya apne design ke hisaab se
-    minHeight: "250px", }}>
-                <img src={s.img} alt={s.title} style={{ width: "100%", display: "block" ,height: "100%",objectFit: "cover", }} />
+    minHeight: "250px",}}>
+                <img src={s.img} alt={s.title} style={{ width: "100%", display: "block" ,height: "100%",objectFit: "cover", boxShadow: "0 12px 25px rgba(0,0,0,0.12)"  }} />
                 <div className="overlay" style={{
                   position: "absolute",
                   bottom: "0",

@@ -136,35 +136,36 @@ const App = () => {
 
 </div>
 
-
-        <ul className="nav-links">
-          {navLinks.map((link) => (
-            <li
-              key={link.path}
-              onClick={() => navigate(link.path)}
-              onMouseEnter={() => setHovered(link.path)}
-              onMouseLeave={() => setHovered(null)}
-              style={{
-                cursor: "pointer",
-                paddingBottom: "6px",
-               paddingRight: "25px" ,
-              gap: "1px",
-                
-                color:
-                  hovered === link.path || location.pathname === link.path
-                    ? "orange"
-                    : "#000",
-                borderBottom:
-                  location.pathname === link.path
-                    ? "2px solid orange"
-                    : "2px solid transparent",
-                transition: "border-bottom 0.25s ease",
-              }}
-            >
-              {link.label}
-            </li>
-          ))}
-        </ul>
+<ul className="nav-links">
+  {navLinks.map((link) => (
+    <li
+      key={link.path}
+      onClick={() => navigate(link.path)}
+      onMouseEnter={() => setHovered(link.path)}
+      onMouseLeave={() => setHovered(null)}
+      style={{ cursor: "pointer", paddingRight: "25px" }}
+    >
+      <span
+        style={{
+          paddingBottom: "6px",
+          display: "inline-block",
+          color:
+            hovered === link.path || location.pathname === link.path
+              ? "orange"
+              : "#000",
+          borderBottom:
+            location.pathname === link.path
+              ? "2px solid orange"
+              : "2px solid transparent",
+          transition: "border-bottom 0.25s ease",
+        }}
+      >
+        {link.label}
+      </span>
+    </li>
+  ))}
+</ul>
+          
       </nav>
 
       {/* ROUTES */}
@@ -192,10 +193,6 @@ const App = () => {
       <ChatBot />
 
       <Footer className="page-section" />
-
-  
-
-
     </>
   );
 };

@@ -283,11 +283,10 @@ offering safe travel
     <div style={{ padding: "16px" }}>
       <h4 style={{ margin: "0 0 8px",
           textAlign: "center",
-       }}>Crafting with d</h4>
+       }}>Crafting with Calm</h4>
       <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>
     
-Crafting in a way that re
-memory feels like
+Crafting in a way that revisiting every memory feels like relived
       </p>
     </div>
   </div>
