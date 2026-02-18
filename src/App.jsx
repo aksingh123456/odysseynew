@@ -99,7 +99,7 @@ const App = () => {
   <img
     src="/images/odyssey-logo.png"
     alt="Odyssey Logo"
-    style={{ height: "40px" }}
+    style={{ maxHeight: "55px",  }}
   />
 
 <span

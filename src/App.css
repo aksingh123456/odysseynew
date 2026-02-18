@@ -48,7 +48,8 @@ html {
 }
 /* Navbar styling */
 .navbar {
-  position: fixed;   /* fixed nahi */
+  position: fixed; 
+   height: 50px;         /* fixed nahi */
   top: 0;
   width: 100%;
   z-index: 999;
