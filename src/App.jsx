@@ -111,7 +111,7 @@ const App = () => {
 >
   <span
     style={{
-      fontSize: "13px",        // smaller Odyssey
+      fontSize: "16px",        // smaller Odyssey
       fontWeight: "500",
       letterSpacing: "0.6px",
       color: "#ff8c00",        // 🔁 reversed color
@@ -122,7 +122,7 @@ const App = () => {
 
   <span
     style={{
-      fontSize: "7px",        // smaller than Odyssey
+      fontSize: "11px",        // smaller than Odyssey
       letterSpacing: "1.8px",
       color: "#1f2933",        // 🔁 reversed color
       textTransform: "uppercase",

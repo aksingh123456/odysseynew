@@ -42,7 +42,7 @@ const Footer = () => {
             <li>FIT</li>
             <li>GIT</li>
             <li>Customized Packages</li>
-            <li>MCE</li>
+            <li>MICE</li>
             <li>VISA</li>
           </ul>
         </div>
