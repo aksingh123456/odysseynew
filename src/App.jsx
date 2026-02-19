@@ -1,6 +1,5 @@
 import Hero from "./components/Hero";
 import ChatBot from "./components/ChatBot";
-
 import AboutSection from "./components/AboutSection";
 import Services from "./components/Services";
 import ImageShowcase from "./components/ImageShowcase";
@@ -10,30 +9,18 @@ import ServicesMore from "./components/ServicesMore";
 import AboutReadMore from "./components/AboutReadMore";
 import ContactUs from "./components/ContactUs";
 import Testimonial from "./components/Testimonial";
-
-
-
-
-
-
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-
-
-
 import { useState, useEffect, useRef } from "react";
 import ScrollToTop from "./components/ScrollToTop";
-
+import TravelLandingPage from "./components/TravelLandingPage";
+import Mice from "./components/Mice";
+import Customizedpac from "./components/Customizedpac";
 import "./App.css";
-
 const App = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [hovered, setHovered] = useState(null);
- 
-
-
   const navbarRef = useRef(null);
-
   // Scroll to top on route change
   useEffect(() => {
     setTimeout(() => {
@@ -42,7 +29,6 @@ const App = () => {
   }, [location.pathname]);
 
   //   Navbar show/hide
- 
 
   useEffect(() => {
     const sections = document.querySelectorAll(".page-section");
@@ -66,9 +52,6 @@ const App = () => {
   }, []);
 
   
-  
-  
-
   // Navbar Links
   const navLinks = [
     { path: "/", label: "Home" },
@@ -137,7 +120,15 @@ const App = () => {
 </div>
 
 <ul className="nav-links">
-  {navLinks.map((link) => (
+  {navLinks.map((link) => {
+  const isActive =
+    location.pathname === link.path ||
+    (link.path === "/service-more" &&
+      location.pathname.startsWith("/fit-travel")) || (link.path === "/service-more" &&
+      location.pathname.startsWith("/mice")) || (link.path === "/service-more" &&
+      location.pathname.startsWith("/customized-packages"));
+
+  return (
     <li
       key={link.path}
       onClick={() => navigate(link.path)}
@@ -150,20 +141,18 @@ const App = () => {
           paddingBottom: "6px",
           display: "inline-block",
           color:
-            hovered === link.path || location.pathname === link.path
-              ? "orange"
-              : "#000",
-          borderBottom:
-            location.pathname === link.path
-              ? "2px solid orange"
-              : "2px solid transparent",
+            hovered === link.path || isActive ? "orange" : "#000",
+          borderBottom: isActive
+            ? "2px solid orange"
+            : "2px solid transparent",
           transition: "border-bottom 0.25s ease",
         }}
       >
         {link.label}
       </span>
     </li>
-  ))}
+  );
+})}
 </ul>
           
       </nav>
@@ -188,6 +177,10 @@ const App = () => {
         <Route path="/about" element={<AboutReadMore />} />
         <Route path="/service-more" element={<ServicesMore />} />
         <Route path="/destination-more" element={<DestinationMore />} />
+        <Route path="/fit-travel" element={<TravelLandingPage />} />
+        <Route path="/mice" element={<Mice />} />
+        <Route path="/customized-packages" element={<Customizedpac />} />
+
         
       </Routes>
       <ChatBot />

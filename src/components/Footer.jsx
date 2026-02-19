@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer" id="contact">
       <div className="footer-grid">
@@ -39,10 +41,10 @@ const Footer = () => {
         <div>
           <h4>Our Services</h4>
           <ul>
-            <li>FIT</li>
+           <li onClick={() => navigate("/fit-travel")}>FIT</li>
             <li>GIT</li>
-            <li>Customized Packages</li>
-            <li>MICE</li>
+            <li onClick={() => navigate("/customized-packages")}>Customized Packages</li>
+            <li onClick={() => navigate("/mice")}>MICE</li>
             <li>VISA</li>
           </ul>
         </div>
