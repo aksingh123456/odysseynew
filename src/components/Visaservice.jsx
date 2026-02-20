@@ -11,17 +11,17 @@ const services = [
 const destinations = [
   {
     title: "Thailand",
-    img: "/images/your-thailand.jpg",
+    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
     desc: "Explore tropical beaches, vibrant nightlife and rich culture."
   },
   {
     title: "Bali",
-    img: "/images/your-bali.jpg",
+    img: "https://images.unsplash.com/photo-1518544887877-6d8e1d45e4a6",
     desc: "A paradise with serene temples, rice terraces and sunsets."
   },
   {
     title: "Dubai",
-    img: "/images/your-dubai-image.jpg",
+    img: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad",
     desc: "Luxury shopping, desert safaris and modern architecture."
   },
   {
@@ -31,7 +31,7 @@ const destinations = [
   }
 ];
 
-export default function TravelLandingPage() {
+export default function Visaservice() {
   return (
     <div className="page">
       <style>{`

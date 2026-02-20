@@ -45,7 +45,7 @@ const Footer = () => {
             <li>GIT</li>
             <li onClick={() => navigate("/customized-packages")}>Customized Packages</li>
             <li onClick={() => navigate("/mice")}>MICE</li>
-            <li>VISA</li>
+            <li onClick={() => navigate("/visa-service")}>Visa Services</li>
           </ul>
         </div>
 

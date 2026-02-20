@@ -1,11 +1,11 @@
 import React from "react";
 
 const services = [
-  { title: "Customized luxury safaris", img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470" },
-  { title: "Private tours & experiences", img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" },
-  { title: "Honeymoon getaways", img: "https://images.unsplash.com/photo-1493558103817-58b2924bce98" },
-  { title: "Local food & cultural tours", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836" },
-  { title: "Budget friendly holidays", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+  { title: "Customized luxury safaris", img: "/images/image 67.jpg" },
+  { title: "Private tours & experiences", img: "/images/image 68.jpg" },
+  { title: "Honeymoon getaways", img: "/images/image 69.jpg" },
+  { title: "Local food & cultural tours", img: "/images/image 70.jpg" },
+  { title: "Budget friendly holidays", img: "/images/image 71.jpg" }
 ];
 
 const destinations = [
@@ -21,7 +21,7 @@ const destinations = [
   },
   {
     title: "Dubai",
-    img: "/images/your-dubai-image.jpg",
+    img:"/images/your-dubai-image.jpg",
     desc: "Luxury shopping, desert safaris and modern architecture."
   },
   {
@@ -31,7 +31,7 @@ const destinations = [
   }
 ];
 
-export default function TravelLandingPage() {
+export default function Git() {
   return (
     <div className="page">
       <style>{`
@@ -88,15 +88,15 @@ export default function TravelLandingPage() {
 
       {/* Hero */}
       <div className="hero">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="hero" />
-        <div className="hero-text">FIT</div>
+        <img src="/images/image 65.jpg" alt="hero" />
+        <div className="hero-text">Group Inclusive Tour</div>
       </div>
 
       {/* Intro */}
       <div className="section">
-        <h2>FIT-Free Independent Travel</h2>
+        <h2>Group Inclusive Tours</h2>
         <p>
-          Free Independent Travel (FIT) is designed for individual travelers and small groups seeking customized, flexible itineraries. Our team manages the planning, coordination, and ground operations to ensure smooth execution across destinations.
+         Structured travel programs designed for groups, supported by coordinated logistics, reliable supplier networks, and seamless on-ground execution.
         </p>
       </div>
 
@@ -131,7 +131,7 @@ export default function TravelLandingPage() {
 
       {/* CTA */}
       <div className="cta">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="connect" />
+        <img src="/images/cta-bg.jpg" alt="connect" />
         <div className="cta-content">
           <h3>Lets Connect!</h3>
           <button>Reach Us</button>

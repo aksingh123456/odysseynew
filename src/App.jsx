@@ -15,6 +15,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import TravelLandingPage from "./components/TravelLandingPage";
 import Mice from "./components/Mice";
 import Customizedpac from "./components/Customizedpac";
+import Visaservice from "./components/visaservice";
+import Git from "./components/Git";
 import "./App.css";
 const App = () => {
   const navigate = useNavigate();
@@ -126,7 +128,8 @@ const App = () => {
     (link.path === "/service-more" &&
       location.pathname.startsWith("/fit-travel")) || (link.path === "/service-more" &&
       location.pathname.startsWith("/mice")) || (link.path === "/service-more" &&
-      location.pathname.startsWith("/customized-packages"));
+      location.pathname.startsWith("/customized-packages")) || (link.path === "/service-more" &&
+      location.pathname.startsWith("/visa-service"));
 
   return (
     <li
@@ -180,6 +183,9 @@ const App = () => {
         <Route path="/fit-travel" element={<TravelLandingPage />} />
         <Route path="/mice" element={<Mice />} />
         <Route path="/customized-packages" element={<Customizedpac />} />
+        <Route path="/visa-service" element={<Visaservice />} />
+        <Route path="/git" element={<Git />} />
+
 
         
       </Routes>
