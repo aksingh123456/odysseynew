@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import TravelLandingPage from "./components/TravelLandingPage";
 import Mice from "./components/Mice";
 import Customizedpac from "./components/Customizedpac";
-import Visaservice from "./components/visaservice";
+import Visaservice from "./components/Visaservice";
 import Git from "./components/Git";
 import "./App.css";
 const App = () => {
