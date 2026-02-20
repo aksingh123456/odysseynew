@@ -133,7 +133,7 @@ export default function Mice() {
       <div className="cta">
         <img src="/images/cta-bg.jpg" alt="connect" />
         <div className="cta-content">
-          <h3>Lets Connect!</h3>
+          <h3>Lets Connect!!</h3>
           <button>Reach Us</button>
         </div>
       </div>
