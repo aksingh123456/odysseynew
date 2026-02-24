@@ -25,6 +25,7 @@ const Footer = () => {
             <li>Our Experiences</li>
             <li>Our Services</li>
             <li>Payment Links</li>
+            <li>Contact Us</li>
           </ul>
         </div>
 
@@ -36,16 +37,17 @@ const Footer = () => {
             <li>Vietnam</li>
             <li>Dubai</li>
             <li>Georgia</li>
+            <li>Azerbaijan</li>
           </ul>
         </div>
         <div>
           <h4>Our Services</h4>
           <ul>
-           <li onClick={() => navigate("/fit-travel")}>FIT</li>
-            <li>GIT</li>
-            <li onClick={() => navigate("/customized-packages")}>Customized Packages</li>
-            <li onClick={() => navigate("/mice")}>MICE</li>
-            <li onClick={() => navigate("/visa-service")}>Visa Services</li>
+           <li onClick={() => navigate("/packages")}>Packages</li>
+            
+            <li onClick={() => navigate("/customized-packages")}>VISA</li>
+            <li onClick={() => navigate("/mice")}>Cruise</li>
+           
           </ul>
         </div>
 

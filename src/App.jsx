@@ -17,6 +17,16 @@ import Mice from "./components/Mice";
 import Customizedpac from "./components/Customizedpac";
 import Visaservice from "./components/Visaservice";
 import Git from "./components/Git";
+import Dubaimore from "./components/Dubaimore";
+import Europe from "./components/Europe";
+import Singapur from "./components/Singapur";
+import Malaysia from "./components/Malaysia";
+import Thailand from "./components/Thailand";
+import Azerbaijan from "./components/Azerbaijan";
+import Bali from "./components/Bali";
+import Georgia from "./components/Georgia";
+import Vietnam from "./components/Vietnam";
+import Packages from "./components/Packages";
 import "./App.css";
 const App = () => {
   const navigate = useNavigate();
@@ -129,7 +139,15 @@ const App = () => {
       location.pathname.startsWith("/fit-travel")) || (link.path === "/service-more" &&
       location.pathname.startsWith("/mice")) || (link.path === "/service-more" &&
       location.pathname.startsWith("/customized-packages")) || (link.path === "/service-more" &&
-      location.pathname.startsWith("/visa-service"));
+      location.pathname.startsWith("/visa-service")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/singapore")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/malaysia")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/azerbaijan")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/bali")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" &&
+      location.pathname.startsWith("/europe")) || (link.path === "/service-more" &&
+      location.pathname.startsWith("/packages"));
 
   return (
     <li
@@ -171,7 +189,6 @@ const App = () => {
               <Services />
               <ImageShowcase />
               <Testimonial />
-
             </>
           }
         />
@@ -185,6 +202,18 @@ const App = () => {
         <Route path="/customized-packages" element={<Customizedpac />} />
         <Route path="/visa-service" element={<Visaservice />} />
         <Route path="/git" element={<Git />} />
+        <Route path="/dubai" element={<Dubaimore />} />
+        <Route path="/europe" element={<Europe />} />
+        <Route path="/singapore" element={<Singapur />} />
+        <Route path="/malaysia" element={<Malaysia />} />
+        <Route path="/thailand" element={<Thailand />} />
+        <Route path="/azerbaijan" element={<Azerbaijan />} />
+        <Route path="/bali" element={<Bali />} />
+        <Route path="/georgia" element={<Georgia />} />
+        <Route path="/vietnam" element={<Vietnam />} />
+         <Route path="/packages" element={<Packages />} />
+
+
 
 
         

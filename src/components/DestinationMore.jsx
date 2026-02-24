@@ -11,44 +11,44 @@ const destinations = [
     title: "Dubai",
     desc: "A modern global city combining luxury, innovation, and cultural experiences.",
     img: "/images/your-dubai-image.jpg",
-    link: "/destination-more",
+    link: "/dubai",
   },
   {
     title: "Thailand",
     desc: "A versatile destination known for vibrant cities, tropical beaches, and rich cultural heritage.",
     img: "/images/your-thailand.jpg",
-    link: "/destination-more",
+    link: "/thailand",
   },
   {
     title: "Bali",
     desc: "A serene island destination celebrated for its landscapes, spirituality, and wellness culture.",
     img: "/images/your-bali.jpg",
-    link: "/destination-more",
+    link: "/bali",
   },
   {
     title: "Vietnam",
     desc: "A culturally rich destination offering historic cities, scenic landscapes, and authentic experiences.",
     img: "/images/your-vietnam.jpg",
-    link: "/destination-more",
+    link: "/vietnam",
   },
   // 3 placeholders
   {
     title: "Azerbaijan",
     desc: "A unique blend of modern architecture and ancient traditions, with scenic landscapes and rich cultural heritage.",
     img: "/images/azerbaijan.jpg",
-    link: "/destination-more",
+    link: "/azerbaijan",
   },
   {
     title: "Georgia",
     desc: "A land of stunning mountains, ancient monasteries, and vibrant culture, perfect for history and nature enthusiasts.",
     img: "/images/georgia.jpg",
-    link: "/destination-more",
+    link: "/georgia",
   },
   {
     title: "Europe",
     desc: "A diverse continent offering historic cities, iconic landmarks, and rich cultural experiences for all travelers.",
     img: "/images/europe.jpg",
-    link: "/destination-more",
+    link: "/europe",
   },
 ];
 
