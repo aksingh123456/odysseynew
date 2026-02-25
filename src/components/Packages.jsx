@@ -1,4 +1,6 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules"
 const services = [
   { title: "Customized luxury safaris", img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470" },
   { title: "Private tours & experiences", img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" },
@@ -31,23 +33,41 @@ const destinations = [
   {
     title: "Thailand",
     img: "/images/your-thailand.jpg",
-    desc: "Explore tropical beaches, vibrant nightlife and rich culture."
+    desc: " Thailand offers a strong balance of leisure, wellness, and experiential travel supported by well-developed tourism infrastructure.."
   },
   {
     title: "Bali",
     img: "/images/your-bali.jpg",
-    desc: "A paradise with serene temples, rice terraces and sunsets."
+    desc: "A serene island destination celebrated for its landscapes, spirituality, and wellness culture."
   },
   {
     title: "Dubai",
     img:"/images/your-dubai-image.jpg",
-    desc: "Luxury shopping, desert safaris and modern architecture."
+    desc:"A modern global city combining luxury, innovation, and cultural experiences."
   },
   {
     title: "Vietnam",
     img: "https://images.unsplash.com/photo-1500534623283-312aade485b7",
-    desc: "Lush landscapes, rivers and cultural heritage."
-  }
+    desc: "A culturally rich destination offering historic cities, scenic landscapes, and authentic experiences.."
+  },
+     {
+    title: "Azerbaijan",
+    desc: "A unique blend of modern architecture and ancient traditions, with scenic landscapes and rich cultural heritage.",
+    img: "/images/azerbaijan.jpg",
+    link: "/azerbaijan",
+  },
+  {
+    title: "Georgia",
+    desc: "A land of stunning mountains, ancient monasteries, and vibrant culture, perfect for history and nature enthusiasts.",
+    img: "/images/georgia.jpg",
+    link: "/georgia",
+  },
+  {
+    title: "Europe",
+    desc: "A diverse continent offering historic cities, iconic landmarks, and rich cultural experiences for all travelers.",
+    img: "/images/europe.jpg",
+    link: "/europe",
+  },
 ];
 const Packages = () => {
    return (
@@ -68,13 +88,37 @@ const Packages = () => {
         .grid.services { grid-template-columns: repeat(5, 1fr); }
         .grid.destinations { grid-template-columns: repeat(4, 1fr); }
 
-        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-        .card img { width: 100%; height: 100px; object-fit: cover; }
+        .card { background: #fff; border-radius: 1px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 9px solid #fff; }
+        .card:hover { transform: translateY(-6px);cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
         .card.small img { height: 100px; }
-        .card.large img { height: 160px; }
-        .card-content { padding: 10px; font-size: 12px; color: #444; text-align: center; }
+        .card.large {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card.large img {
+  height: 290px;
+  flex-shrink: 0;
+}
+       .card-content {
+  padding: 10px;
+  font-size: 12px;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
         .card-content h4 { font-size: 14px; margin-bottom: 4px; color: #111; text-align: left; }
-        .card-content p { font-size: 12px; text-align: left; color: #666; }
+        .card-content p {
+  font-size: 12px;
+  text-align: left;
+  color: #666;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;   /* max 3 lines */
+  -webkit-box-orient: vertical;
+}
 
         .cta { margin: 40px; border-radius: 16px; overflow: hidden; position: relative; }
         .cta img { width: 100%; height: 300px; object-fit: cover; }
@@ -106,9 +150,28 @@ const Packages = () => {
 
       {/* Hero */}
       <div className="hero">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="hero" />
-        <div className="hero-text">Our Packages</div>
-      </div>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 2500 }}
+        pagination={{ clickable: true }}
+        loop={true}
+      >
+        <SwiperSlide>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="hero1" />
+        </SwiperSlide>
+
+        {/* Yahan tum apni 2 aur images add kar dena */}
+        <SwiperSlide>
+          <img src="IMAGE_2_URL" alt="hero2" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src="IMAGE_3_URL" alt="hero3" />
+        </SwiperSlide>
+      </Swiper>
+
+      <div className="hero-text">Our Packages</div>
+    </div>
 
       {/* Intro */}
       <div className="section">
@@ -194,20 +257,36 @@ This service combines personalization with operational reliability.
       </div>
       
       {/* Destinations */}
-      <div className="section">
-        <h2>Destinations We Offer:</h2>
-        <div className="grid destinations">
-          {destinations.map((d, i) => (
-            <div key={i} className="card large">
-              <img src={d.img} alt={d.title} />
-              <div className="card-content">
-                <h4>{d.title}</h4>
-                <p>{d.desc}</p>
-              </div>
-            </div>
-          ))}
+     
+<div className="section">
+  <h2>Destinations We Offer:</h2>
+
+  <Swiper
+  modules={[Autoplay]}
+  autoplay={{ delay: 2500, disableOnInteraction: false }}
+  loop={true}
+  speed={700}
+  spaceBetween={20}
+  slidesPerView={4}
+  breakpoints={{
+    0: { slidesPerView: 1 },
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  }}
+>
+    {destinations.map((d, i) => (
+      <SwiperSlide key={i}>
+        <div className="card large">
+          <img src={d.img} alt={d.title} />
+          <div className="card-content">
+            <h4>{d.title}</h4>
+            <p>{d.desc}</p>
+          </div>
         </div>
-      </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
         {/* CTA */}
       <div className="cta">
         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="connect" />
