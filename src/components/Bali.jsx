@@ -9,7 +9,7 @@ const [showInfo, setShowInfo] = useState(false);
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 32.jpg"
           alt="Bali"
         />
         <div className="hero-text">Bali</div>
@@ -24,25 +24,22 @@ const [showInfo, setShowInfo] = useState(false);
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         Framed by lush rice terraces, volcanic landscapes, and serene coastlines, Bali is a destination that harmonizes nature and spirituality. Known for its temples, artistic heritage, and wellness culture, the island offers a peaceful yet vibrant travel experience.
+From beachside relaxation to cultural immersion and curated retreats, Bali provides diverse travel possibilities supported by strong hospitality services and experiential offerings. It is a destination where tradition and modern comfort coexist effortlessly.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 94.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 95.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 96.png" alt="" />
         </div>
 
         <div className="card">

@@ -50,6 +50,19 @@ const destinations = [
     img: "/images/europe.jpg",
     link: "/europe",
   },
+  {
+    title: "Singapore",
+    desc: " Known for its futuristic skyline, waterfront promenades, and vibrant neighborhoods, the city-state offers a refined blend of tradition and modernity.",
+    img: "/images/image 107.png",
+    link: "/singapore",
+  },
+  {
+    title: "Malaysia",
+    desc: " It is a destination where tradition, biodiversity, and contemporary comfort come together effortlessly..",
+    img: "/images/image 111.png",
+    link: "/malaysia",
+  },
+  
 ];
 
 const DestinationMore = () => {

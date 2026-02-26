@@ -9,7 +9,7 @@ const  Europe=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 20.jpg"
           alt="Europe"
         />
         <div className="hero-text">Europe</div>
@@ -24,29 +24,26 @@ const  Europe=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+          A continent shaped by centuries of history, culture, and innovation, Europe offers an extraordinary diversity of experiences within a single region. From the timeless architecture of Rome and Paris to the alpine landscapes of Switzerland and the coastal charm of the Mediterranean, Europe blends heritage with modern vibrancy.
+Each country presents its own identity—distinct traditions, cuisines, languages, and landscapes—yet together they form a seamless travel network supported by strong infrastructure and connectivity. Whether exploring historic cities, scenic countryside routes, luxury escapes, or curated group programs, Europe provides depth, elegance, and enduring appeal for every kind of journey.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 112.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 113.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 114.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&q=80" alt="" />
         </div>
       </div>
          {/* 🔹 Button */}

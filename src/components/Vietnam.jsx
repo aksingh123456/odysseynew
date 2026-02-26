@@ -9,7 +9,7 @@ const Vietnammore=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 30.jpg"
           alt="Vietnam"
         />
         <div className="hero-text">Vietnam</div>
@@ -24,29 +24,26 @@ const Vietnammore=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         Vietnam unfolds as a journey through history, landscapes, and living traditions. From the limestone karsts of Ha Long Bay to the lantern-lit streets of Hoi An and the dynamic energy of Ho Chi Minh City, the country offers depth and diversity.
+Rich in heritage, cuisine, and scenic beauty, Vietnam supports a wide range of travel programs including cultural tours, nature exploration, and urban experiences. Its growing infrastructure and authentic local character make it an increasingly sought-after destination.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 97.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 98.png" alt="" />
+        </div>
+
+        <div className="card">
+          <img src="/images/image 99.png" alt="" />
         </div>
 
         <div className="card">
           <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
-        </div>
-
-        <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
         </div>
       </div>
        {/* 🔹 Button */}

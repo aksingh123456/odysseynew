@@ -147,7 +147,7 @@ const App = () => {
       location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" &&
       location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" &&
       location.pathname.startsWith("/europe")) || (link.path === "/service-more" &&
-      location.pathname.startsWith("/packages"));
+      location.pathname.startsWith("/packages")) || (link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) ||  (link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) || (link.path === "/destination-more" && location.pathname.startsWith("/singapore")) || (link.path === "/destination-more" && location.pathname.startsWith("/malaysia")) || (link.path === "/destination-more" && location.pathname.startsWith("/azerbaijan")) || (link.path === "/destination-more" && location.pathname.startsWith("/bali")) || (link.path === "/destination-more" && location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" && location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" && location.pathname.startsWith("/thailand")) ;
 
   return (
     <li

@@ -9,10 +9,10 @@ const Singapur=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 27.jpg"
           alt="Singapur"
         />
-        <div className="hero-text">Singapur</div>
+        <div className="hero-text">Singapore</div>
       </div>
         {/* 🔹 Tabs */}
       <div className="tabs">
@@ -24,29 +24,26 @@ const Singapur=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+          Compact in size yet global in presence, Singapore is a destination where innovation, culture, and nature exist in seamless harmony. Known for its futuristic skyline, waterfront promenades, and vibrant neighborhoods, the city-state offers a refined blend of tradition and modernity.
+Beyond its architectural marvels and world-class infrastructure, Singapore celebrates a rich multicultural identity reflected in its cuisine, festivals, and heritage districts. From luxury leisure travel to corporate programs and curated urban experiences, Singapore delivers efficiency, sophistication, and reliability in every journey
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 106.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 107.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 108.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=1600&q=80" alt="" />
         </div>
       </div>
         {/* 🔹 Button */}

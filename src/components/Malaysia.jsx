@@ -9,7 +9,7 @@ const Malaysia=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 23.jpg"
           alt="Malaysia"
         />
         <div className="hero-text">Malaysia</div>
@@ -24,29 +24,26 @@ const Malaysia=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         Diverse in landscape and culture, Malaysia is a destination shaped by rainforest canopies, tropical islands, historic towns, and dynamic cities. From the modern skyline of Kuala Lumpur to the heritage streets of Penang and the tranquil beaches of Langkawi, the country offers a balanced mix of nature and urban exploration.
+With its multicultural influences, culinary richness, and well-developed tourism infrastructure, Malaysia supports a wide range of travel programs including leisure, group tours, and experiential itineraries. It is a destination where tradition, biodiversity, and contemporary comfort come together effortlessly.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 109.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 110.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 111.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80" alt="" />
         </div>
       </div>
        {/* 🔹 Button */}

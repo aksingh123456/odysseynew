@@ -9,7 +9,7 @@ const Thailand=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 31.jpg"
           alt="Thailand"
         />
         <div className="hero-text">Thailand</div>
@@ -24,29 +24,26 @@ const Thailand=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         A land of warm hospitality and diverse landscapes, Thailand captivates with its balance of vibrant cities, tranquil beaches, and spiritual heritage. From bustling Bangkok to the serene islands and ancient temples, the country offers a rich mix of cultural and leisure experiences.
+Thailand’s well-developed travel infrastructure, culinary diversity, and welcoming atmosphere make it ideal for leisure travel, group tours, and incentive programs. With experiences ranging from tropical retreats to cultural exploration, Thailand remains one of Asia’s most versatile destinations.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 90.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 91.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 92.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="/images/image 93.png" alt="" />
         </div>
       </div>
         {/* 🔹 Button */}

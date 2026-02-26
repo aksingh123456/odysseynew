@@ -74,11 +74,11 @@ const Packages = () => {
     <div className="page">
       <style>{`
        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        .page { background: #f3f4f6;   padding-bottom: 40px;}
+        .page { background: #f3f4f6;  }
 
-        .hero { margin:0; border-radius:0; overflow: hidden; position: relative; }
-        .hero img { width: 100%; height: 500px; object-fit: cover; }
-        .hero-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 40px; font-weight: bold; background: rgba(0,0,0,0.25); }
+        .hero { margin:0; border-radius:0; overflow: hidden; position: relative; height:90vh }
+        .hero img { width: 100%; height: 600px; object-fit: cover; }
+        .hero-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 40px; font-weight: bold; background: rgba(0,0,0,0.25);  z-index: 10; }
 
         .section { padding: 0 20px; margin-top: 32px; }
         .section h2 { font-size: 20px; margin-bottom: 12px; color: #111; }
@@ -152,21 +152,21 @@ const Packages = () => {
       <div className="hero">
       <Swiper
         modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 2500 }}
-        pagination={{ clickable: true }}
+        autoplay={{ delay: 2200 }}
         loop={true}
       >
         <SwiperSlide>
-          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="hero1" />
+          <img src="/images/image 72.jpg" alt="hero1" />
         </SwiperSlide>
 
         {/* Yahan tum apni 2 aur images add kar dena */}
         <SwiperSlide>
-          <img src="IMAGE_2_URL" alt="hero2" />
+          <img src="/images/image 115.jpg" alt="hero2" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="IMAGE_3_URL" alt="hero3" />
+          <img src="/images/image 116.jpg" alt="hero3" />
+          
         </SwiperSlide>
       </Swiper>
 

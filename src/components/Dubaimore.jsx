@@ -13,7 +13,12 @@ const Dubaimore=()=>{
           alt="Dubai"
         />
         <div className="hero-text">Dubai</div>
+        <div className="scroll-down">
+          <span>Scroll Down to Explore</span>
+          <div className="v-shape"></div>
+        </div>
       </div>
+      
         {/* 🔹 Tabs */}
       <div className="tabs">
         <span className="active">Overview</span>
@@ -24,29 +29,26 @@ const Dubaimore=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         Where tradition meets ambition, Dubai stands as a city of striking contrasts. Rising from the desert landscape, it blends futuristic architecture with deep-rooted Arabian heritage. From the serene dunes and historic souks to world-class shopping districts and iconic skylines, Dubai offers a dynamic experience for every traveler.
+Beyond its modern appeal, the city preserves its cultural identity through museums, heritage neighborhoods, and traditional cuisine. Whether it’s luxury travel, desert adventures, corporate events, or curated leisure programs, Dubai delivers a seamless blend of innovation, hospitality, and global connectivity.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 86.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 87.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 88.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="/images/image 85.png" alt="" />
         </div>
       </div>
          {/* 🔹 Button */}

@@ -9,7 +9,7 @@ const Georgia=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 28.jpg"
           alt="Georgia"
         />
         <div className="hero-text">Georgia</div>
@@ -24,29 +24,26 @@ const Georgia=()=>{
       <div className="overview">
         <h3>Overview</h3>
         <p>
-          Where tradition meets ambition, Dubai stands as a city of striking
-          contrasts. Rising from the desert landscape, it blends futuristic
-          architecture with deep-rooted Arabian heritage. From the serene dunes
-          and historic souks to world-class shopping districts and iconic
-          skylines, Dubai offers a dynamic experience for every traveler.
+         Nestled between Europe and Asia, Georgia is a land of mountain ranges, ancient monasteries, and timeless hospitality. Its cobblestone towns and scenic valleys reflect centuries of history blended with modern vibrancy.
+From the Caucasus Mountains to the historic streets of Tbilisi, Georgia offers immersive cultural experiences and picturesque landscapes. With its emerging travel infrastructure and unique identity, the country presents strong potential for curated and group travel programs.
         </p>
       </div>
        {/* 🔹 Image Cards */}
       <div className="gallery">
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60f" alt="" />
+          <img src="/images/image 100.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" />
+          <img src="/images/image 101.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" alt="" />
+          <img src="/images/image 102.png" alt="" />
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="" />
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1600&q=80" alt="" />
         </div>
       </div>
        {/* 🔹 Button */}
