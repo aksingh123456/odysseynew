@@ -9,7 +9,7 @@ const Dubaimore=()=>{
       {/* 🔹 Hero Section */}
       <div className="hero">
         <img
-          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+          src="/images/Rectangle 3.jpg"
           alt="Dubai"
         />
         <div className="hero-text">Dubai</div>

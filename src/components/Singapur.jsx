@@ -13,6 +13,10 @@ const Singapur=()=>{
           alt="Singapur"
         />
         <div className="hero-text">Singapore</div>
+       <div className="scroll-down">
+          <span>Scroll Down to Explore</span>
+          <div className="v-shape"></div>
+        </div>
       </div>
         {/* 🔹 Tabs */}
       <div className="tabs">

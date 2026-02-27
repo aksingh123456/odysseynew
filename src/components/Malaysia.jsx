@@ -13,6 +13,10 @@ const Malaysia=()=>{
           alt="Malaysia"
         />
         <div className="hero-text">Malaysia</div>
+      <div className="scroll-down">
+          <span>Scroll Down to Explore</span>
+          <div className="v-shape"></div>
+        </div>
       </div>
         {/* 🔹 Tabs */}
       <div className="tabs">

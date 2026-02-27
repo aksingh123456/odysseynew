@@ -5,7 +5,7 @@
 /* 🔹 Hero */
 .hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -33,6 +33,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.3);
+   z-index: 0;
 }
 .scroll-down {
   position: absolute;
@@ -42,7 +43,7 @@
   z-index: 2;
   color: white;
 }
-.scroll-down .arrow {
+.scroll-down .v-shape {
   width: 14px;
   height: 14px;
   border-bottom: 2px solid white;
@@ -52,9 +53,15 @@
    animation: bounce 1.5s infinite;
 }
 @keyframes bounce {
-  0% { transform: rotate(45deg) translateY(0); }
-  50% { transform: rotate(45deg) translateY(6px); }
-  100% { transform: rotate(45deg) translateY(0); }
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(-45deg) translateY(0);
+  }
+  40% {
+    transform: rotate(-45deg) translateY(5px);
+  }
+  60% {
+    transform: rotate(-45deg) translateY(3px);
+  }
 }
 /* 🔹 Tabs */
 .tabs {

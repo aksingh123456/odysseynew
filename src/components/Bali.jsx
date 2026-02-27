@@ -13,6 +13,10 @@ const [showInfo, setShowInfo] = useState(false);
           alt="Bali"
         />
         <div className="hero-text">Bali</div>
+      <div className="scroll-down">
+          <span>Scroll Down to Explore</span>
+          <div className="v-shape"></div>
+        </div>
       </div>
         {/* 🔹 Tabs */}
       <div className="tabs">
