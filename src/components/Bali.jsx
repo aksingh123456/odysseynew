@@ -51,7 +51,7 @@ From beachside relaxation to cultural immersion and curated retreats, Bali provi
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulbali />}
+{showInfo && <Usefulbali onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

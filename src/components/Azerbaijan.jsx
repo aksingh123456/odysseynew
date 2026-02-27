@@ -51,7 +51,7 @@ Its diverse landscapes range from mountain villages to desert plains, offering v
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulazerbaijan />}
+{showInfo && <Usefulazerbaijan onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

@@ -51,7 +51,7 @@ Beyond its architectural marvels and world-class infrastructure, Singapore celeb
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulsingapur />}
+{showInfo && <Usefulsingapur onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

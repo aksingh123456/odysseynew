@@ -51,7 +51,7 @@ Each country presents its own identity—distinct traditions, cuisines, language
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefuleurope />}
+{showInfo && <Usefuleurope onClose={() => setShowInfo(false)} />}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

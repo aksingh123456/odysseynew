@@ -51,7 +51,7 @@ With its multicultural influences, culinary richness, and well-developed tourism
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulmalaysia />}
+{showInfo && <Usefulmalaysia  onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

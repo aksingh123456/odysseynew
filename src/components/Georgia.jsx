@@ -51,7 +51,7 @@ From the Caucasus Mountains to the historic streets of Tbilisi, Georgia offers i
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulgeorgia />}
+{showInfo && <Usefulgeorgia  onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

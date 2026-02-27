@@ -51,7 +51,7 @@ Thailand’s well-developed travel infrastructure, culinary diversity, and welco
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulthailand />}
+{showInfo && <Usefulthailand onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

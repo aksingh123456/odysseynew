@@ -51,7 +51,7 @@ Rich in heritage, cuisine, and scenic beauty, Vietnam supports a wide range of t
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefulvietnam />}
+{showInfo && <Usefulvietnam onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>
