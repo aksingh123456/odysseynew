@@ -14,53 +14,50 @@ const Usefulmalaysia = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+            Located in Southeast Asia, divided into Peninsular Malaysia and East Malaysia (on Borneo Island), featuring tropical rainforests, coastlines, and modern cities.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Approx. 330,803 square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+              Many nationalities enjoy visa-free entry for short stays; visa requirements depend on nationality.
             </p>
           </div>
 
           <div>
             <strong>Local Time</strong>
-            <p>GMT +4</p>
+            <p>GMT +8</p>
           </div>
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Malaysian Ringgit (MYR)</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>+60</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>Routine vaccinations recommended for travelers.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>Malay (Bahasa Malaysia) is the official language; English is widely spoken.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+          Best time to visit –  Generally May to September for the west coast; travel seasons vary by region due to monsoons.
         </p>
 
       </div>

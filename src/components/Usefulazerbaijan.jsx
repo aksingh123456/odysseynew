@@ -14,21 +14,19 @@ const Usefulazerbaijan = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+              Located between Eastern Europe and Western Asia along the Caspian Sea.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Approx. 86,600 square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+             E-visa available for many nationalities via online application.
             </p>
           </div>
 
@@ -39,28 +37,27 @@ const Usefulazerbaijan = ({ onClose }) => {
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Azerbaijani Manat (AZN)</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>+994</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>Routine vaccinations recommended.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>Azerbaijani; English spoken in major urban areas.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+          Best time to visit –  April to June and September to October for mild weather.
         </p>
 
       </div>

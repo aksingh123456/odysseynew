@@ -14,53 +14,50 @@ const Usefulsingapur = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+             A sovereign island city-state located in Southeast Asia, at the southern tip of the Malay Peninsula, known for its modern skyline and green urban spaces.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Approx. 734 square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+             Visa requirements vary by nationality. Many travelers may enter visa-free for short stays; others may require prior visa approval.
             </p>
           </div>
 
           <div>
             <strong>Local Time</strong>
-            <p>GMT +4</p>
+            <p>GMT +8</p>
           </div>
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Singapore Dollar (SGD)</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>+65</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>No mandatory vaccinations for most travelers; routine vaccinations recommended.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>English, Malay, Mandarin, and Tamil are official languages. English is widely used.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+          Best time to visit – Year-round destination; February to April generally offers slightly drier weather.
         </p>
 
       </div>

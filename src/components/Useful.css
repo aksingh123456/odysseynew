@@ -1,95 +1,124 @@
+/* Overlay background */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #000000b3;
+  background: rgba(0, 0, 0, 0.7);
   z-index: 999;
   overflow-y: auto;
-  pointer-events: auto;
 
   transform: translateY(-100%);
-  animation: slideFromTop 0.5s ease forwards;
+  animation: slideFromTop 0.45s ease forwards;
 }
 
+/* White container */
 .overlay-content {
   position: relative;
-  z-index: 1000; /* ABOVE overlay background */
   max-width: 1100px;
   margin: 60px auto;
-  background: #fff;
-  border-radius: 4px;
+  background: #ffffff;
+  border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header bar (exact beige look) */
+.overlay-content h2 {
+  text-align: center;
+  background: #e6dcc9;
+  padding: 14px 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #d4c9b3;
+  color: #333;
+}
+.overlay-content h2::after {
+  content: "";
+  display: block;
+  width: 160px;          /* line length */
+  height: 3px;           /* thickness */
+  background: #e67e22;   /* orange color */
+  margin: 8px auto 0;    /* center align */
+  border-radius: 2px;
+}
+/* Close button */
 .close-btn {
   position: absolute;
-  top: 14px;
-  right: 18px;
+  top: 10px;
+  right: 16px;
   font-size: 22px;
   border: none;
   background: none;
   cursor: pointer;
-  z-index: 1001; /* ABOVE overlay-content */
+  color: #333;
 }
 
-/* White container (same layout as before) */
-.useful-info {
-  background: #ffffff;
-  max-width: 1100px;
-  margin: 60px auto;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  font-family: Arial, sans-serif;
-}
-
-/* Header bar (beige like image) */
-.useful-info h2 {
-  text-align: center;
-  background: #e6dcc9;
-  padding: 16px;
-  margin: 0;
-  font-weight: 600;
-  border-bottom: 1px solid #d6cbb5;
-}
-
-/* Grid same as your JSX */
+/* Grid as table */
 .info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #dcdcdc;
 }
 
-/* Each block row style */
+/* Each cell */
 .info-grid > div {
-  padding: 14px 16px;
-  font-size: 14px;
-  border-bottom: 1px solid #e0e0e0;
-}
+  display: grid;
+  grid-template-columns: 160px 1fr; /* left label fixed, right content flexible */
+  gap: 10px;
+  align-items: start;
 
-/* Alternate grey rows like image */
-.info-grid > div:nth-child(4n + 1),
-.info-grid > div:nth-child(4n + 2) {
-  background: #f5f5f5;
+  padding: 18px 20px;   /* 🔥 was 14px → now bigger */
+  font-size: 15px;      /* slightly bigger text */
+  line-height: 1.6;     /* more vertical space */
+  border-bottom: 1px solid #dcdcdc;
 }
-
-/* Label bold */
 .info-grid strong {
-  font-weight: 600;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Remove extra margin from paragraph */
+.info-grid p {
+  margin: 0;
+}
+
+/* Vertical divider between columns */
+/* Alternate row background (pair-wise like image) */
+.info-grid > div:nth-child(8n + 1),
+.info-grid > div:nth-child(8n + 2),
+.info-grid > div:nth-child(8n + 5),
+.info-grid > div:nth-child(8n + 6) {
+  background:  #f3f3f3; /* beige */
+}
+
+.info-grid > div:nth-child(8n + 3),
+.info-grid > div:nth-child(8n + 4),
+.info-grid > div:nth-child(8n + 7),
+.info-grid > div:nth-child(8n + 8) {
+  background: #e6dcc9; /* grey */
+}
+
+/* Labels */
+.info-grid strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #333;
 }
 
 /* Best time full width row */
 .best-time {
-  background: #f5f5f5;
+  background: #f3f3f3;
   padding: 14px 16px;
   margin: 0;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #dcdcdc;
   font-size: 14px;
+  color: #333;
 }
-
-/* Close button */
 
 /* Slide animation */
 @keyframes slideFromTop {

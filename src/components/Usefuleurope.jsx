@@ -14,53 +14,50 @@ const Usefuleurope = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+             Europe is a diverse continent located in the Northern Hemisphere, bordered by the Atlantic Ocean, Arctic Ocean, Mediterranean Sea, and Asia. It features varied landscapes including mountains, coastlines, plains, and historic cities.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Approx. 10.18 million square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+              Many European countries are part of the Schengen Area, allowing travel across member states with a single Schengen visa. Visa requirements vary by nationality
             </p>
           </div>
 
           <div>
             <strong>Local Time</strong>
-            <p>GMT +4</p>
+            <p>GMT +8</p>
           </div>
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Euro (EUR) is widely used; some countries use their own currencies (e.g., Swiss Franc, British Pound).</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>Varies by country.</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>No mandatory vaccinations for most travelers; routine travel vaccinations recommended.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>Multiple official languages across countries; English is widely spoken in major cities and tourism areas.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+          Best time to visit –  April to June and September to October offer pleasant weather and fewer crowds. Summer (June–August) is peak season; winter is ideal for alpine and festive travel experiences.
         </p>
 
       </div>
