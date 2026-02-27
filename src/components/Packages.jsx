@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Packages.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules"
 const services = [
@@ -72,88 +74,19 @@ const destinations = [
 const Packages = () => {
    return (
     <div className="page">
-      <style>{`
-       * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        .page { background: #f3f4f6;  }
-
-        .hero { margin:0; border-radius:0; overflow: hidden; position: relative; height:90vh }
-        .hero img { width: 100%; height: 600px; object-fit: cover; }
-        .hero-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 40px; font-weight: bold; background: rgba(0,0,0,0.25);  z-index: 10; }
-
-        .section { padding: 0 20px; margin-top: 32px; }
-        .section h2 { font-size: 20px; margin-bottom: 12px; color: #111; }
-        .section p { font-size: 14px; color: #555;}
-
-        .grid { display: grid; gap: 20px; margin-top: 16px; width : 100%; }
-        .grid.services { grid-template-columns: repeat(5, 1fr); }
-        .grid.destinations { grid-template-columns: repeat(4, 1fr); }
-
-        .card { background: #fff; border-radius: 1px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 9px solid #fff; }
-        .card:hover { transform: translateY(-6px);cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card.small img { height: 100px; }
-        .card.large {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.card.large img {
-  height: 290px;
-  flex-shrink: 0;
-}
-       .card-content {
-  padding: 10px;
-  font-size: 12px;
-  color: #444;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-        .card-content h4 { font-size: 14px; margin-bottom: 4px; color: #111; text-align: left; }
-        .card-content p {
-  font-size: 12px;
-  text-align: left;
-  color: #666;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;   /* max 3 lines */
-  -webkit-box-orient: vertical;
-}
-
-        .cta { margin: 40px; border-radius: 16px; overflow: hidden; position: relative; }
-        .cta img { width: 100%; height: 300px; object-fit: cover; }
-        .cta-content { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); color: #fff; }
-        .cta button { margin-top: 8px; background: #f97316; border: none; padding: 10px 20px; border-radius: 6px; color: #fff; font-weight: 600; cursor: pointer; }
-        .cta button:hover { background: #ea580c; }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-          .grid.services { grid-template-columns: repeat(3, 1fr); }
-          .grid.destinations { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (max-width: 640px) {
-          .navbar { flex-direction: column; align-items: flex-start; gap: 10px; }
-          .nav-links a { margin-left: 0; margin-right: 12px; }
-          .hero img { height: 220px; }
-          .hero-text { font-size: 28px; }
-          .section { padding: 0 20px; }
-          .hero { margin: 20px; }
-          .cta { margin: 20px; }
-          .grid.services { grid-template-columns: repeat(2, 1fr); }
-          .grid.destinations { grid-template-columns: 1fr; }
-        }
-      `}</style>
+    
 
       {/* Navbar */}
      
 
       {/* Hero */}
+      <div className="hero-wrapper">
       <div className="hero">
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 2200 }}
         loop={true}
+          className="hero-swiper"
       >
         <SwiperSlide>
           <img src="/images/image 72.jpg" alt="hero1" />
@@ -170,7 +103,12 @@ const Packages = () => {
         </SwiperSlide>
       </Swiper>
 
+
+  {/* Overlay Layer */}
+
+
       <div className="hero-text">Our Packages</div>
+    </div>
     </div>
 
       {/* Intro */}
