@@ -9,7 +9,7 @@
   z-index: 999;
   overflow-y: auto;
 
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
   animation: slideFromTop 0.45s ease forwards;
 }
 
