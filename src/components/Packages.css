@@ -10,7 +10,7 @@
   
  /* ===== HERO WRAPPER (Handles clipping) ===== */
 .hero-wrapper {
-    margin: 60px 4% 0 4%;
+    margin: 60px 2% 0 2%;
     border-radius: 30px;
     overflow: hidden;      /* Clipping moved here */
   }
