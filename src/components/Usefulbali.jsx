@@ -14,53 +14,50 @@ const Usefulbali = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+              An island province of Indonesia located between Java and Lombok, known for beaches, volcanic mountains, and rice terraces.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Indonesia: Approx. 1.9 million square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+              Visa-on-arrival available for many nationalities for short stays.
             </p>
           </div>
 
           <div>
             <strong>Local Time</strong>
-            <p>GMT +4</p>
+            <p>GMT +8 (Bali)</p>
           </div>
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Indonesian Rupiah (IDR)</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>+62</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>Routine vaccinations recommended.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>Indonesian (Bahasa Indonesia); English widely spoken in tourism areas.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+         Best time to visit – April to October (dry season).
         </p>
 
       </div>

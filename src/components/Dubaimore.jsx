@@ -56,7 +56,7 @@ Beyond its modern appeal, the city preserves its cultural identity through museu
         <button className="info-btn" onClick={() => setShowInfo(!showInfo)}>
   Useful Information +
 </button>
-{showInfo && <Usefuldubai/>}
+{showInfo && <Usefuldubai onClose={() => setShowInfo(false)}/>}
         <p className="explore">Explore More Destinations →</p>
       </div>
       </div>

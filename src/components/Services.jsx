@@ -59,21 +59,9 @@ const Services = () => {
           <SwiperSlide key={i}>
             {/* Card Link */}
             <Link to={s.link} style={{ textDecoration: "none", color: "inherit" }}>
-              <div className="service-card" style={{ position: "relative", overflow: "hidden", borderRadius: "10px" , height: "500px",       // ya apne design ke hisaab se
-    minHeight: "250px",}}>
-                <img src={s.img} alt={s.title} style={{ width: "100%", display: "block" ,height: "100%",objectFit: "cover", boxShadow: "0 12px 25px rgba(0,0,0,0.12)"  }} />
-                <div className="overlay" style={{
-                  position: "absolute",
-                  bottom: "0",
-                  left: "0",
-                   // k
-                  width: "100%",
-                  background: "rgba(0,0,0,0.6)",
-                  color: "#fff",
-                  padding: "13px",
-                  textAlign: "center",
-                  
-                }}>
+              <div className="service-card">
+                <img src={s.img} alt={s.title}  />
+                <div className="overlay" >
                   <h3>{s.title}</h3>
                   <p style={{ fontSize: "0.9rem" }}>{s.desc}</p>
                 </div>

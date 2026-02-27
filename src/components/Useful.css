@@ -1,17 +1,38 @@
-/* 🔥 Full screen overlay background */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #000000b3; /* dark backdrop */
+  background: #000000b3;
   z-index: 999;
+  overflow-y: auto;
+  pointer-events: auto;
 
   transform: translateY(-100%);
   animation: slideFromTop 0.5s ease forwards;
+}
 
-  overflow-y: auto;
+.overlay-content {
+  position: relative;
+  z-index: 1000; /* ABOVE overlay background */
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1001; /* ABOVE overlay-content */
 }
 
 /* White container (same layout as before) */
@@ -69,15 +90,6 @@
 }
 
 /* Close button */
-.close-btn {
-  position: absolute;
-  top: 14px;
-  right: 18px;
-  font-size: 22px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
 
 /* Slide animation */
 @keyframes slideFromTop {

@@ -6,8 +6,7 @@ const Usefuldubai = ({ onClose }) => {
       <div className="overlay-content">
 
         {/* ❌ Close button */}
-        <button className="close-btn" onClick={onClose}>✕</button>
-
+       <button className="close-btn" onClick={() => console.log('clicked')}>✕</button>
         <h2>Useful Information</h2>
 
         <div className="info-grid">

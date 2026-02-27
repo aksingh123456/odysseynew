@@ -14,53 +14,50 @@ const Usefulthailand = ({ onClose }) => {
           <div>
             <strong>Geography</strong>
             <p>
-              Located in the United Arab Emirates along the Arabian Gulf,
-              surrounded by desert landscapes and modern urban development.
+              Located in Southeast Asia, bordered by Myanmar, Laos, Cambodia, and Malaysia, with coastlines along the Andaman Sea and Gulf of Thailand.
             </p>
           </div>
 
           <div>
             <strong>Size</strong>
-            <p>UAE: Approx. 83,600 square kilometres</p>
+            <p>Approx. 513,120 square kilometres.</p>
           </div>
 
           <div>
             <strong>Visa</strong>
             <p>
-              Visa requirements vary by nationality. Many countries receive
-              visa-on-arrival. Advance visa may be required for others.
+             Many nationalities receive visa exemption or visa-on-arrival for short stays.
             </p>
           </div>
 
           <div>
             <strong>Local Time</strong>
-            <p>GMT +4</p>
+            <p>GMT +7</p>
           </div>
 
           <div>
             <strong>Currency</strong>
-            <p>UAE Dirham (AED)</p>
+            <p>Thai Baht (THB)</p>
           </div>
 
           <div>
             <strong>Telephone code</strong>
-            <p>+971</p>
+            <p>+66</p>
           </div>
 
           <div>
-            <strong>Electricity</strong>
-            <p>220-240V. Type G plug (British-style).</p>
+            <strong>Vaccinations</strong>
+            <p>No mandatory vaccinations; routine travel vaccines recommended.</p>
           </div>
 
           <div>
             <strong>Language</strong>
-            <p>Arabic is the official language; English is widely spoken.</p>
+            <p>Thai is the official language; English is spoken in tourist areas.</p>
           </div>
         </div>
 
         <p className="best-time">
-          Best time to visit – November to March, when temperatures are cooler
-          and more comfortable.
+         Best time to visit – November to February, during the cooler and drier season.
         </p>
 
       </div>
