@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 
 const services = [
-  { title: "Guidance on required documentation", img: "/images/image 771.png" },
-  { title: "Application form assistance", img: "/images/image 781.png" },
-  { title: "Appointment scheduling support", img: "/images/image 791.png" },
-  { title: "Coordination with visa centers", img: "/images/image 801.png" },
-  { title: "Status tracking assistance", img: "/images/image 811.png" }
+  { title: "Guidance on required documentation", img: "/images/image 77.png" },
+  { title: "Application form assistance", img: "/images/image 78.png" },
+  { title: "Appointment scheduling support", img: "/images/image 79.png" },
+  { title: "Coordination with visa centers", img: "/images/image 80.png" },
+  { title: "Status tracking assistance", img: "/images/image 81.png" }
 ];
 
 const destinations = [
@@ -128,15 +128,15 @@ export default function Visaservice() {
 
       {/* Hero */}
       <div className="hero">
-        <img src="/images/image 76.png" alt="hero" />
-        <div className="hero-text">Visa Services</div>
+        <img src="/images/image 83.png" alt="hero" />
+        <div className="hero-text">Cruise Travel Services</div>
       </div>
 
       {/* Intro */}
       <div className="section">
-        <h2>Visa Assistance Services</h2>
+        <h2>Cruise Travel Services</h2>
         <p>
-         Reliable guidance and coordination for travel visa applications, supporting smooth documentation and compliance for international travel.
+        Comprehensive cruise travel coordination supported by seamless pre- and post-cruise arrangements, reliable ground handling, and destination expertise.
         </p>
       </div>
 

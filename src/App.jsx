@@ -27,6 +27,7 @@ import Bali from "./components/Bali";
 import Georgia from "./components/Georgia";
 import Vietnam from "./components/Vietnam";
 import Packages from "./components/Packages";
+import Cruisetravelservice from "./components/Cruisetravelservice"; 
 import "./App.css";
 const App = () => {
   const navigate = useNavigate();
@@ -147,7 +148,9 @@ const App = () => {
       location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" &&
       location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" &&
       location.pathname.startsWith("/europe")) || (link.path === "/service-more" &&
-      location.pathname.startsWith("/packages")) || (link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) ||  (link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) || (link.path === "/destination-more" && location.pathname.startsWith("/singapore")) || (link.path === "/destination-more" && location.pathname.startsWith("/malaysia")) || (link.path === "/destination-more" && location.pathname.startsWith("/azerbaijan")) || (link.path === "/destination-more" && location.pathname.startsWith("/bali")) || (link.path === "/destination-more" && location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" && location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" && location.pathname.startsWith("/thailand")) ;
+      location.pathname.startsWith("/packages"))|| (link.path === "/service-more" &&
+      location.pathname.startsWith("/cts")) || (link.path === "/service-more" &&
+      location.pathname.startsWith("/visa-service")) ||(link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) ||  (link.path === "/destination-more" && location.pathname.startsWith("/dubai")) || (link.path === "/destination-more" && location.pathname.startsWith("/europe")) || (link.path === "/destination-more" && location.pathname.startsWith("/singapore")) || (link.path === "/destination-more" && location.pathname.startsWith("/malaysia")) || (link.path === "/destination-more" && location.pathname.startsWith("/azerbaijan")) || (link.path === "/destination-more" && location.pathname.startsWith("/bali")) || (link.path === "/destination-more" && location.pathname.startsWith("/georgia")) || (link.path === "/destination-more" && location.pathname.startsWith("/vietnam")) || (link.path === "/destination-more" && location.pathname.startsWith("/thailand")) ;
 
   return (
     <li
@@ -201,6 +204,7 @@ const App = () => {
         <Route path="/mice" element={<Mice />} />
         <Route path="/customized-packages" element={<Customizedpac />} />
         <Route path="/visa-service" element={<Visaservice />} />
+        <Route path="/cts" element={<Cruisetravelservice />} />
         <Route path="/git" element={<Git />} />
         <Route path="/dubai" element={<Dubaimore />} />
         <Route path="/europe" element={<Europe />} />
