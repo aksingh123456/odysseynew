@@ -1,34 +1,74 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
+import "swiper/css";
 
 const services = [
-  { title: "Customized luxury safaris", img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470" },
-  { title: "Private tours & experiences", img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" },
-  { title: "Honeymoon getaways", img: "https://images.unsplash.com/photo-1493558103817-58b2924bce98" },
-  { title: "Local food & cultural tours", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836" },
-  { title: "Budget friendly holidays", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" }
+  { title: "Guidance on required documentation", img: "/images/image 77.png" },
+  { title: "Application form assistance", img: "/images/image 78.png" },
+  { title: "Appointment scheduling support", img: "/images/image 79.png" },
+  { title: "Coordination with visa centers", img: "/images/image 80.png" },
+  { title: "Status tracking assistance", img: "/images/image 81.png" }
 ];
 
 const destinations = [
   {
+    title: "Dubai",
+    desc: " Dubai is well suited for premium leisure travel, corporate programs, and large-scale events, supported by world-class infrastructure and services.",
+    img: "/images/your-dubai-image.jpg",
+    link: "/dubai",
+  },
+  {
     title: "Thailand",
-    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    desc: "Explore tropical beaches, vibrant nightlife and rich culture."
+    desc: " Thailand offers a strong balance of leisure, wellness, and experiential travel supported by well-developed tourism infrastructure.",
+    img: "/images/your-thailand.jpg",
+    link: "/thailand",
   },
   {
     title: "Bali",
-    img: "https://images.unsplash.com/photo-1518544887877-6d8e1d45e4a6",
-    desc: "A paradise with serene temples, rice terraces and sunsets."
-  },
-  {
-    title: "Dubai",
-    img: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad",
-    desc: "Luxury shopping, desert safaris and modern architecture."
+    desc: "A serene island destination celebrated for its landscapes, spirituality, and wellness culture. Bali is ideal for leisure travel, retreats, and customized programs, with diverse experiences across beaches, villages, and nature.",
+    img: "/images/your-bali.jpg",
+    link: "/bali",
   },
   {
     title: "Vietnam",
-    img: "https://images.unsplash.com/photo-1500534623283-312aade485b7",
-    desc: "Lush landscapes, rivers and cultural heritage."
-  }
+    desc: "A culturally rich destination offering historic cities, scenic landscapes, and authentic local experiences. Vietnam supports a wide range of itineraries, from heritage and culinary travel to nature-based and urban exploration.",
+    img: "/images/your-vietnam.jpg",
+    link: "/vietnam",
+  },
+  // 3 placeholders
+  {
+    title: "Azerbaijan",
+    desc: "A unique blend of modern architecture and ancient traditions, with scenic landscapes and rich cultural heritage.",
+    img: "/images/azerbaijan.jpg",
+    link: "/azerbaijan",
+  },
+  {
+    title: "Georgia",
+    desc: "A land of stunning mountains, ancient monasteries, and vibrant culture, perfect for history and nature enthusiasts.",
+    img: "/images/georgia.jpg",
+    link: "/georgia",
+  },
+  {
+    title: "Europe",
+    desc: "A diverse continent offering historic cities, iconic landmarks, and rich cultural experiences for all travelers.",
+    img: "/images/europe.jpg",
+    link: "/europe",
+  },
+  {
+    title: "Singapore",
+    desc: " Known for its futuristic skyline, waterfront promenades, and vibrant neighborhoods, the city-state offers a refined blend of tradition and modernity.",
+    img: "/images/image 107.png",
+    link: "/singapore",
+  },
+  {
+    title: "Malaysia",
+    desc: " It is a destination where tradition, biodiversity, and contemporary comfort come together effortlessly..",
+    img: "/images/image 111.png",
+    link: "/malaysia",
+  },
+  
 ];
 
 export default function Visaservice() {
@@ -88,15 +128,15 @@ export default function Visaservice() {
 
       {/* Hero */}
       <div className="hero">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="hero" />
-        <div className="hero-text">FIT</div>
+        <img src="/images/image 76.png" alt="hero" />
+        <div className="hero-text">Visa Services</div>
       </div>
 
       {/* Intro */}
       <div className="section">
-        <h2>FIT-Free Independent Travel</h2>
+        <h2>Visa Assistance Services</h2>
         <p>
-          Free Independent Travel (FIT) is designed for individual travelers and small groups seeking customized, flexible itineraries. Our team manages the planning, coordination, and ground operations to ensure smooth execution across destinations.
+         Reliable guidance and coordination for travel visa applications, supporting smooth documentation and compliance for international travel.
         </p>
       </div>
 
@@ -114,21 +154,33 @@ export default function Visaservice() {
       </div>
 
       {/* Destinations */}
-      <div className="section">
-        <h2>Destinations We Offer:</h2>
-        <div className="grid destinations">
-          {destinations.map((d, i) => (
-            <div key={i} className="card large">
-              <img src={d.img} alt={d.title} />
-              <div className="card-content">
-                <h4>{d.title}</h4>
-                <p>{d.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
+     <Swiper
+               modules={[Autoplay]}
+               loop
+               autoplay={{ delay: 2500, disableOnInteraction: false }}
+               spaceBetween={30}
+               breakpoints={{
+                 320: { slidesPerView: 1 },
+                 768: { slidesPerView: 2 },
+                 1024: { slidesPerView: 4 },
+               }}
+             >
+               {destinations.map((d, i) => (
+                <SwiperSlide key={i}>
+       <Link to={d.link} style={{ textDecoration: "none", color: "inherit" }}>
+         <div className="dest-service-card">
+           <div className="dest-image-wrap"> <img src={d.img} alt="destination" /></div>
+           {/* CONTENT BELOW IMAGE */}
+           <div className="dest-card-content">
+             {d.title && <h3>{d.title}</h3>}
+             {d.desc && <p>{d.desc}</p>}
+           </div>
+         </div>
+       </Link>
+     </SwiperSlide>
+     
+               ))}
+             </Swiper>
       {/* CTA */}
       <div className="cta">
         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="connect" />
