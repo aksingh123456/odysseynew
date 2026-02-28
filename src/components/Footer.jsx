@@ -32,12 +32,12 @@ const Footer = () => {
         <div>
           <h4>Destinations</h4>
           <ul>
-            <li>Thailand</li>
-            <li>Bali</li>
-            <li>Vietnam</li>
-            <li>Dubai</li>
-            <li>Georgia</li>
-            <li>Azerbaijan</li>
+            <li onClick={() => navigate("/thailand")}>Thailand</li>
+            <li onClick={() => navigate("/bali")}>Bali</li>
+            <li onClick={() => navigate("/vietnam")}>Vietnam</li>
+            <li onClick={() => navigate("/dubai")}>Dubai</li>
+            <li onClick={() => navigate("/georgia")}>Georgia</li>
+            <li onClick={() => navigate("/azerbaijan")}>Azerbaijan</li>
           </ul>
         </div>
         <div>
