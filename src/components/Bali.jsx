@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Usefulbali from "./Usefulbali";
 const Bali=()=>{
 const [showInfo, setShowInfo] = useState(false);
+const navigate = useNavigate();
     return (
        <div className="bali-page">
 
@@ -56,7 +58,7 @@ From beachside relaxation to cultural immersion and curated retreats, Bali provi
   Useful Information +
 </button>
 {showInfo && <Usefulbali onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+         <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

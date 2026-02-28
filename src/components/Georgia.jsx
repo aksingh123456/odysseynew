@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefulgeorgia from "./Usefulgeorgia";
+import { useNavigate } from "react-router-dom";
 const Georgia=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="georgia-page">
 
@@ -56,7 +58,7 @@ From the Caucasus Mountains to the historic streets of Tbilisi, Georgia offers i
   Useful Information +
 </button>
 {showInfo && <Usefulgeorgia  onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+        <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

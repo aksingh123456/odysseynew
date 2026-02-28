@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefulazerbaijan from "./Usefulazerbaijan";
+import { useNavigate } from "react-router-dom";
 const Azerbaijan=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="azerbaijan-page">
 
@@ -56,7 +58,7 @@ Its diverse landscapes range from mountain villages to desert plains, offering v
   Useful Information +
 </button>
 {showInfo && <Usefulazerbaijan onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+        <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefulmalaysia from "./Usefulmalaysia";
+import { useNavigate } from "react-router-dom";
 const Malaysia=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="malaysia-page">
 
@@ -56,7 +58,7 @@ With its multicultural influences, culinary richness, and well-developed tourism
   Useful Information +
 </button>
 {showInfo && <Usefulmalaysia  onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+         <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

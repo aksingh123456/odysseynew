@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefuldubai from "./Usefuldubai";
+import { useNavigate } from "react-router-dom";
 const Dubaimore=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="dubai-page">
 
@@ -57,7 +59,7 @@ Beyond its modern appeal, the city preserves its cultural identity through museu
   Useful Information +
 </button>
 {showInfo && <Usefuldubai onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+        <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

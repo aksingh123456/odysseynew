@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefuleurope from "./Usefuleurope";
+import { useNavigate } from "react-router-dom";
 const  Europe=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="europe-page">
 
@@ -56,7 +58,7 @@ Each country presents its own identity—distinct traditions, cuisines, language
   Useful Information +
 </button>
 {showInfo && <Usefuleurope onClose={() => setShowInfo(false)} />}
-        <p className="explore">Explore More Destinations →</p>
+        <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );

@@ -1,8 +1,10 @@
 import "./dubai.css";
 import { useState } from "react";
 import Usefulsingapur from "./Usefulsingapur";
+import { useNavigate } from "react-router-dom";
 const Singapur=()=>{
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
     return (
        <div className="singapur-page">
 
@@ -56,7 +58,7 @@ Beyond its architectural marvels and world-class infrastructure, Singapore celeb
   Useful Information +
 </button>
 {showInfo && <Usefulsingapur onClose={() => setShowInfo(false)}/>}
-        <p className="explore">Explore More Destinations →</p>
+        <p className="explore" style={{cursor:"pointer"}} onClick={()=>navigate("/destination-more")}>Explore More Destinations →</p>
       </div>
       </div>
     );
