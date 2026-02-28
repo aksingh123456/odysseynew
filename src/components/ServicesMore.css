@@ -87,6 +87,7 @@
    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
   overflow: hidden;
   border-radius: 1px;
+  cursor:pointer;
   
 }
 
@@ -97,7 +98,6 @@
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
-   
   border-radius: 1px; 
 }
 

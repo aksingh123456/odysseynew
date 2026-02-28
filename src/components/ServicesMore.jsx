@@ -1,35 +1,38 @@
 import "./ServicesMore.css";
-
+import { Link } from "react-router-dom";
 const services = [
   {
     img: "/images/serviceimg1.jpg",
-    title: "Free Independent Services",
-    desc: "Individual or small‑group travelers who want customized, flexible trips.",
+    title: "Our Packages",
+    desc: "Our Package involves various services such as solo traveling, group travelling, customized packages etc",
+    link: "/packages",
   },
-  {
-    img: "/images/serviceimg2.jpg",
-    title: "MICE Service",
-    desc: "Corporate and business travel, incentive trips, trade shows and conferences.",
-  },
-  {
-    img: "/images/serviceimg3.jpg",
-    title: "Customized Packages",
-    desc: "Tailor‑made travel programs designed around specific client needs.",
-  },
+  // {
+  //   img: "/images/serviceimg2.jpg",
+  //   title: "MICE Service",
+  //   desc: "Corporate and business travel, incentive trips, trade shows and conferences.",
+  // },
+  // {
+  //   img: "/images/serviceimg3.jpg",
+  //   title: "Customized Packages",
+  //   desc: "Tailor‑made travel programs designed around specific client needs.",
+  // },
   {
     img: "/images/serviceimg4.jpg",
     title: "VISA Service",
-    desc: "Assistance with travel visas and documentation with business visa support.",
+    desc: "Assistance with travel visas and documentation along with Business visas, tourist visa assistance and many more",
+    link: "/visa-service",
   },
-  {
-    img: "/images/serviceimg5.jpg",
-    title: "Group Inclusive Tour",
-    desc: "Pre‑planned tours for large groups with fixed itineraries.",
-  },
+  // {
+  //   img: "/images/serviceimg5.jpg",
+  //   title: "Group Inclusive Tour",
+  //   desc: "Pre‑planned tours for large groups with fixed itineraries.",
+  // },
   {
     img: "/images/serviceimg6.jpg",
     title: "Cruise Service",
-    desc: "Cruise vacations with shore excursions and port transfers.",
+    desc: "Travel arrangements involving cruise vacations along with shore excursions, port transfer and many more",
+    link: "/cts",
   },
 ];
 
@@ -52,18 +55,24 @@ const ServicesMore = () => {
 
       {/* SERVICES GRID */}
       <section className="services-section">
-        <div className="services-grid">
-          {services.map((s, i) => (
-            <div className="service-card" key={i}>
-              <img src={s.img} alt={s.title} />
-              <div className="service-overlay">
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-              </div>
-            </div>
-          ))}
+  <div className="services-grid">
+    {services.map((s, i) => (
+      <Link
+        to={s.link}
+        key={i}
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <div className="service-card">
+          <img src={s.img} alt={s.title} />
+          <div className="service-overlay">
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </div>
         </div>
-      </section>
+      </Link>
+    ))}
+  </div>
+</section>
 
       {/* CTA */}
       <section
